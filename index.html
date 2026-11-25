@@ -1,0 +1,2840 @@
+<!doctype html>
+<html lang="ko"><head>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사유의 서가 — 철학자와 소설가의 문장 발췌</title>
+    <meta name="description" content="내가 정한 시간마다 무작위 철학자의 명언이나 선택한 작가의 책 속 한 문장을 발췌해 읽는 사색의 공간.">
+    <meta property="og:title" content="사유의 서가 — 철학자와 소설가의 문장 발췌">
+    <meta property="og:description" content="내가 정한 시간마다 무작위 철학자의 명언이나 선택한 작가의 책 속 한 문장을 발췌해 읽는 사색의 공간.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Sans+KR:wght@400;500;600&amp;family=Noto+Serif+KR:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-canvas: #fbf9f5;
+        --bg-surface: #f4f0e8;
+        --bg-surface-soft: rgba(244, 240, 232, 0.72);
+        --bg-segmented: #e9e3d7;
+        --bg-elevated: #fbf9f5;
+        --border-hairline: #e4ddd0;
+        --border-soft: rgba(228, 221, 208, 0.75);
+        --ink-primary: #1c1917;
+        --ink-secondary: #57534e;
+        --ink-muted: #6b655d;
+        --ink-faint: #78716c;
+        --accent-primary: #1e4631;
+        --accent-hover: #163525;
+        --accent-tint: rgba(30, 70, 49, 0.08);
+        --accent-tint-strong: rgba(30, 70, 49, 0.14);
+        --accent-ink-on: #fbf9f5;
+        --danger: #9a3412;
+      }
+
+      html.dark {
+        --bg-canvas: #141311;
+        --bg-surface: #1d1b18;
+        --bg-surface-soft: #1d1b18;
+        --bg-segmented: #141311;
+        --bg-elevated: #2a2622;
+        --border-hairline: #2e2a25;
+        --border-soft: rgba(46, 42, 37, 0.8);
+        --ink-primary: #ede9e0;
+        --ink-secondary: #b5afa4;
+        --ink-muted: #9e978e;
+        --ink-faint: #8a8378;
+        --accent-primary: #6ca384;
+        --accent-hover: #7fb697;
+        --accent-tint: rgba(108, 163, 132, 0.12);
+        --accent-tint-strong: rgba(108, 163, 132, 0.18);
+        --accent-ink-on: #141311;
+        --danger: #f87171;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        background-color: var(--bg-canvas);
+        color: var(--ink-primary);
+        font-family: 'Plus Jakarta Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1),
+          color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+        color: inherit;
+      }
+
+      button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      button:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      textarea:focus-visible {
+        outline: 2px solid var(--accent-primary);
+        outline-offset: 2px;
+      }
+
+      .font-editorial {
+        font-family: 'Cormorant Garamond', 'Noto Serif KR', 'Nanum Myeongjo', Georgia, serif;
+      }
+
+      .font-mono-tabular {
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .app-shell {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1152px;
+        margin: 0 auto;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      /* Top Bar (3-zone contract) */
+      .site-header {
+        border-bottom: 1px solid var(--border-hairline);
+        background-color: var(--bg-canvas);
+      }
+
+      .header-inner {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+      }
+
+      .brand-btn {
+        font-family: 'Cormorant Garamond', 'Noto Serif KR', Georgia, serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: var(--ink-primary);
+        white-space: nowrap;
+        flex-shrink: 0;
+        border-radius: 3px;
+      }
+
+      .main-nav {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        font-size: 0.875rem;
+        font-weight: 500;
+      }
+
+      .nav-btn {
+        position: relative;
+        padding: 4px 0;
+        color: var(--ink-muted);
+        white-space: nowrap;
+        flex-shrink: 0;
+        transition: color 150ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .nav-btn:hover {
+        color: var(--ink-primary);
+      }
+
+      .nav-btn.is-active {
+        color: var(--ink-primary);
+      }
+
+      .nav-btn.is-active::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -21px;
+        height: 2px;
+        background-color: var(--accent-primary);
+      }
+
+      .mobile-nav {
+        display: none;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 16px;
+        border-top: 1px solid var(--border-hairline);
+        overflow-x: auto;
+        font-size: 0.8125rem;
+        font-weight: 500;
+      }
+
+      .mobile-nav .nav-btn.is-active {
+        color: var(--accent-primary);
+        font-weight: 600;
+      }
+
+      .mobile-nav .nav-btn.is-active::after {
+        display: none;
+      }
+
+      /* Buttons */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 16px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        border-radius: 8px;
+        background-color: var(--accent-primary);
+        color: var(--accent-ink-on);
+        white-space: nowrap;
+        flex-shrink: 0;
+        transition: background-color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+          transform 120ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--accent-hover);
+      }
+
+      .btn-primary:active {
+        transform: translateY(1px);
+      }
+
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 8px 15px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        border-radius: 8px;
+        border: 1px solid var(--border-hairline);
+        background-color: transparent;
+        color: var(--ink-primary);
+        white-space: nowrap;
+        flex-shrink: 0;
+        transition: background-color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+          border-color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+          color 150ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .btn-outline:hover:not(:disabled) {
+        background-color: var(--bg-surface);
+      }
+
+      .btn-outline:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .btn-outline.is-active {
+        border-color: var(--accent-primary);
+        color: var(--accent-primary);
+        background-color: var(--accent-tint);
+      }
+
+      .btn-sm {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+      }
+
+      /* Main Layout */
+      main {
+        flex: 1;
+      }
+
+      .page-section {
+        padding-top: 40px;
+        padding-bottom: 56px;
+      }
+
+      .desk-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+        gap: 48px;
+        align-items: start;
+      }
+
+      /* Utility Strip */
+      .utility-strip {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding-bottom: 20px;
+        font-size: 0.84rem;
+        color: var(--ink-muted);
+      }
+
+      .utility-left {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+      }
+
+      .utility-right {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex-shrink: 0;
+      }
+
+      .text-link-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--ink-muted);
+        white-space: nowrap;
+        transition: color 150ms ease;
+      }
+
+      .text-link-btn:hover {
+        color: var(--ink-primary);
+      }
+
+      .accent-link {
+        color: var(--accent-primary);
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .accent-link:hover {
+        text-decoration: underline;
+      }
+
+      /* Arrival Notice */
+      .notice-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 16px;
+        padding: 9px 14px;
+        background-color: var(--bg-surface);
+        border: 1px solid var(--border-hairline);
+        border-radius: 8px;
+        font-size: 0.78rem;
+        color: var(--accent-primary);
+      }
+
+      /* Reading Stage */
+      .reading-stage {
+        border-top: 1px solid var(--border-hairline);
+        border-bottom: 1px solid var(--border-hairline);
+        padding: 52px 0;
+        min-height: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .passage-enter {
+        animation: passageFade 200ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      @keyframes passageFade {
+        from {
+          opacity: 0;
+          transform: translateY(5px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .passage-kicker {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.84rem;
+        color: var(--ink-muted);
+        margin-bottom: 24px;
+      }
+
+      .passage-quote {
+        margin: 0;
+        font-family: 'Cormorant Garamond', 'Noto Serif KR', Georgia, serif;
+        font-size: clamp(1.55rem, 2.6vw, 2.15rem);
+        line-height: 1.72;
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        color: var(--ink-primary);
+        text-wrap: balance;
+      }
+
+      .passage-citation {
+        margin-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        color: var(--ink-secondary);
+      }
+
+      .passage-context {
+        margin: 18px 0 0;
+        max-width: 640px;
+        font-size: 0.875rem;
+        line-height: 1.65;
+        color: var(--ink-muted);
+      }
+
+      .stage-actions {
+        padding-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .action-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+      }
+
+      /* Right Control Rail */
+      .control-rail {
+        background-color: var(--bg-surface-soft);
+        border: 1px solid var(--border-hairline);
+        border-radius: 12px;
+        padding: 22px;
+      }
+
+      .rail-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+
+      .rail-title {
+        margin: 0;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--ink-primary);
+      }
+
+      .segmented {
+        display: grid;
+        gap: 4px;
+        padding: 4px;
+        background-color: var(--bg-segmented);
+        border-radius: 8px;
+      }
+
+      .segmented.cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .segmented.cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .segmented-inline {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 4px;
+        background-color: var(--bg-segmented);
+        border-radius: 8px;
+      }
+
+      .seg-btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        font-weight: 500;
+        border-radius: 6px;
+        color: var(--ink-muted);
+        white-space: nowrap;
+        text-align: center;
+        transition: background-color 150ms ease, color 150ms ease;
+      }
+
+      .seg-btn:hover {
+        color: var(--ink-primary);
+      }
+
+      .seg-btn.is-active {
+        background-color: var(--bg-elevated);
+        color: var(--ink-primary);
+      }
+
+      .timer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 14px;
+        margin-bottom: 10px;
+      }
+
+      .countdown-val {
+        font-size: 1.55rem;
+        font-weight: 500;
+        color: var(--ink-primary);
+        margin-top: 2px;
+      }
+
+      .progress-track {
+        width: 100%;
+        height: 2px;
+        background-color: var(--border-hairline);
+        overflow: hidden;
+        margin-bottom: 14px;
+      }
+
+      .progress-fill {
+        height: 100%;
+        background-color: var(--accent-primary);
+        transition: width 350ms linear;
+      }
+
+      .preset-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        margin-bottom: 10px;
+      }
+
+      .preset-grid.cols-6 {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      .preset-btn {
+        padding: 6px 8px;
+        font-size: 0.75rem;
+        font-weight: 500;
+        border-radius: 6px;
+        border: 1px solid var(--border-hairline);
+        background-color: var(--bg-canvas);
+        color: var(--ink-secondary);
+        white-space: nowrap;
+        transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease;
+      }
+
+      .preset-btn:hover {
+        color: var(--ink-primary);
+      }
+
+      .preset-btn.is-active {
+        border-color: var(--accent-primary);
+        background-color: var(--accent-tint);
+        color: var(--accent-primary);
+      }
+
+      .inline-form {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+
+      .field {
+        padding: 7px 10px;
+        font-size: 0.8125rem;
+        border-radius: 6px;
+        border: 1px solid var(--border-hairline);
+        background-color: var(--bg-canvas);
+        color: var(--ink-primary);
+      }
+
+      .field::placeholder {
+        color: var(--ink-faint);
+      }
+
+      .field-xs {
+        padding: 6px 9px;
+        font-size: 0.75rem;
+      }
+
+      .rail-divider {
+        border-top: 1px solid var(--border-hairline);
+        margin-top: 18px;
+        padding-top: 18px;
+      }
+
+      .rail-sub-row {
+        margin-top: 14px;
+        padding-top: 12px;
+        border-top: 1px solid var(--border-hairline);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        font-size: 0.75rem;
+      }
+
+      .toggle-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 0;
+        color: var(--ink-muted);
+        white-space: nowrap;
+      }
+
+      .toggle-link.is-on {
+        color: var(--accent-primary);
+        font-weight: 500;
+      }
+
+      .author-scroll {
+        max-height: 224px;
+        overflow-y: auto;
+        margin-top: 6px;
+        padding-right: 4px;
+      }
+
+      .author-rail-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 8px 9px;
+        font-size: 0.78rem;
+        text-align: left;
+        border-bottom: 1px solid var(--border-soft);
+        border-radius: 5px;
+        color: var(--ink-primary);
+        transition: background-color 140ms ease;
+      }
+
+      .author-rail-item:last-child {
+        border-bottom: none;
+      }
+
+      .author-rail-item:hover {
+        background-color: var(--bg-segmented);
+      }
+
+      .author-rail-item.is-selected {
+        background-color: var(--accent-tint);
+        color: var(--accent-primary);
+        font-weight: 600;
+      }
+
+      .all-random-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 12px;
+        font-size: 0.78rem;
+        border-radius: 6px;
+        margin-top: 10px;
+        border: 1px solid var(--border-hairline);
+        background-color: var(--bg-canvas);
+        color: var(--ink-primary);
+      }
+
+      .all-random-btn.is-active {
+        background-color: var(--accent-primary);
+        border-color: var(--accent-primary);
+        color: var(--accent-ink-on);
+        font-weight: 500;
+      }
+
+      /* Page Headers & Catalog Views */
+      .page-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 16px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--border-hairline);
+      }
+
+      .page-title {
+        margin: 0;
+        font-family: 'Cormorant Garamond', 'Noto Serif KR', Georgia, serif;
+        font-size: clamp(1.85rem, 3vw, 2.35rem);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: var(--ink-primary);
+      }
+
+      .page-subtitle {
+        margin: 8px 0 0;
+        font-size: 0.875rem;
+        color: var(--ink-muted);
+      }
+
+      .catalog-toolbar {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      .catalog-grid {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+        gap: 32px;
+        align-items: start;
+      }
+
+      .author-list-box {
+        border-top: 1px solid var(--border-hairline);
+        border-bottom: 1px solid var(--border-hairline);
+      }
+
+      .author-row-btn {
+        width: 100%;
+        padding: 15px 12px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        border-bottom: 1px solid var(--border-hairline);
+        transition: background-color 140ms ease;
+      }
+
+      .author-row-btn:last-child {
+        border-bottom: none;
+      }
+
+      .author-row-btn:hover {
+        background-color: var(--bg-surface-soft);
+      }
+
+      .author-row-btn.is-inspecting {
+        background-color: var(--bg-surface);
+      }
+
+      .panel-card {
+        border: 1px solid var(--border-hairline);
+        border-radius: 12px;
+        padding: 26px;
+        background-color: var(--bg-surface-soft);
+      }
+
+      .panel-card.plain {
+        background-color: transparent;
+      }
+
+      .passage-list-item {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--border-hairline);
+      }
+
+      .passage-list-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      /* Schedule Studio */
+      .studio-grid {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+        gap: 32px;
+        align-items: start;
+      }
+
+      .schedule-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border-hairline);
+        font-size: 0.875rem;
+      }
+
+      .schedule-row:last-child {
+        border-bottom: none;
+      }
+
+      .log-item-btn {
+        width: 100%;
+        text-align: left;
+        padding: 14px 8px;
+        border-bottom: 1px solid var(--border-hairline);
+        border-radius: 6px;
+        transition: background-color 140ms ease;
+      }
+
+      .log-item-btn:last-child {
+        border-bottom: none;
+      }
+
+      .log-item-btn:hover {
+        background-color: var(--bg-surface-soft);
+      }
+
+      /* Archive Rows */
+      .archive-row {
+        padding: 28px 0;
+        border-bottom: 1px solid var(--border-hairline);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      /* Custom Form Grid */
+      .custom-form {
+        margin-top: 24px;
+        padding: 24px;
+        border: 1px solid var(--border-hairline);
+        border-radius: 12px;
+        background-color: var(--bg-surface-soft);
+      }
+
+      .form-grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .form-label {
+        display: block;
+        font-size: 0.75rem;
+        color: var(--ink-muted);
+        margin-bottom: 5px;
+      }
+
+      /* Footer */
+      .site-footer {
+        border-top: 1px solid var(--border-hairline);
+        padding: 22px 0;
+      }
+
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        font-size: 0.75rem;
+        color: var(--ink-faint);
+      }
+
+      /* Utility helpers */
+      .truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .line-through {
+        text-decoration: line-through;
+      }
+
+      .danger-btn {
+        color: var(--ink-faint);
+        padding: 4px;
+        border-radius: 4px;
+        transition: color 150ms ease;
+      }
+
+      .danger-btn:hover {
+        color: var(--danger);
+      }
+
+      @media (max-width: 960px) {
+        .desk-grid,
+        .catalog-grid,
+        .studio-grid {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+        .form-grid-4 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 768px) {
+        .main-nav {
+          display: none;
+        }
+        .mobile-nav {
+          display: flex;
+        }
+        .container {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+        .page-section {
+          padding-top: 28px;
+          padding-bottom: 40px;
+        }
+        .reading-stage {
+          padding: 36px 0;
+          min-height: 260px;
+        }
+        .preset-grid.cols-6 {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .form-grid-4 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  <style>.aistudio-hover-highlight { box-shadow: inset 0 0 0 0.5px white, inset 0 0 0 1.5px rgba(128,128,128,0.6) !important; }.aistudio-active-highlight { outline: 2px solid #87a9ff !important; outline-offset: -2px !important; box-shadow: 0 0 0 0.5px rgba(0,0,0,0.3), inset 0 0 0 0.5px rgba(0,0,0,0.3) !important; }.aistudio-generating-blur { filter: blur(5px) grayscale(100%) brightness(28%) !important; transition: filter 0.3s ease; }#aistudio-focus-mode-tag { position: absolute; display: none; align-items: center; gap: 4px; background: #87a9ff; border-radius: 12px; z-index: 10000; padding: 8px; color: #32302c; font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-weight: 500; line-height: 21px; pointer-events: none; }#aistudio-hover-mode-tag { position: absolute; display: none; align-items: center; gap: 4px; background: rgba(128,128,128,0.6); border-radius: 12px; z-index: 10000; padding: 8px; color: white; font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-weight: 500; line-height: 21px; pointer-events: none; }.aistudio-img-icon { display: none; vertical-align: middle; pointer-events: auto; cursor: pointer; }.aistudio-img-icon.visible { display: inline-flex; }#aistudio-focus-mode-tag .aistudio-img-icon { position: relative; width: 26px; height: 26px; background: #32302c; border-radius: 6px; margin: -4px -4px -4px 0; }#aistudio-focus-mode-tag .aistudio-img-icon::before { content: ""; position: absolute; top: 4px; left: 4px; width: 18px; height: 18px; background-color: white; -webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); mask-size: contain; mask-repeat: no-repeat; }#aistudio-hover-mode-tag .aistudio-img-icon { position: relative; width: 18px; height: 18px; margin-left: 4px; }#aistudio-hover-mode-tag .aistudio-img-icon::before { content: ""; position: absolute; top: 0; left: 0; width: 18px; height: 18px; background-color: white; -webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); mask-size: contain; mask-repeat: no-repeat; }#aistudio-focus-mode-tag .aistudio-img-icon:hover, #aistudio-hover-mode-tag .aistudio-img-icon:hover { background: #424242 !important; }#aistudio-focus-mode-tag .aistudio-img-icon:active, #aistudio-hover-mode-tag .aistudio-img-icon:active { background: #393f51 !important; }</style></head>
+  <body>
+    <div id="app" class="app-shell"></div>
+
+    <script>
+      (function () {
+        'use strict';
+
+        // =========================================================================
+        // 1. Curated Archive: 18 Authors (9 Philosophers, 9 Novelists) & 72 Excerpts
+        // =========================================================================
+        var AUTHORS = [
+          {
+            id: 'nietzsche',
+            name: '프리드리히 니체',
+            originalName: 'Friedrich Nietzsche',
+            era: '1844–1900',
+            category: 'philosopher',
+            bio: '기존의 도덕과 가치를 전복하고 자기 극복과 운명애를 노래한 독일 철학자.'
+          },
+          {
+            id: 'aurelius',
+            name: '마르쿠스 아우렐리우스',
+            originalName: 'Marcus Aurelius',
+            era: '121–180',
+            category: 'philosopher',
+            bio: '전쟁터의 천막 아래서 자기 내면의 평정과 의무를 성찰한 로마 황제이자 스토아 철학자.'
+          },
+          {
+            id: 'seneca',
+            name: '세네카',
+            originalName: 'Lucius Annaeus Seneca',
+            era: 'BC 4–AD 65',
+            category: 'philosopher',
+            bio: '시간의 유한함과 평정심의 기술을 편지와 에세이로 남긴 로마의 스토아 사상가.'
+          },
+          {
+            id: 'schopenhauer',
+            name: '아르투어 쇼펜하우어',
+            originalName: 'Arthur Schopenhauer',
+            era: '1788–1860',
+            category: 'philosopher',
+            bio: '삶의 맹목적 의지를 통찰하고 고독과 사색의 품격을 탐구한 철학자.'
+          },
+          {
+            id: 'kierkegaard',
+            name: '쇠렌 키르케고르',
+            originalName: 'Søren Kierkegaard',
+            era: '1813–1855',
+            category: 'philosopher',
+            bio: '불안과 선택 앞에 선 단독자 개인의 실존을 깊이 파헤친 덴마크 철학자.'
+          },
+          {
+            id: 'zhuangzi',
+            name: '장자',
+            originalName: '莊子',
+            era: 'BC 369–BC 286',
+            category: 'philosopher',
+            bio: '세속의 분별과 쓸모의 기준을 넘어 무위와 소요의 자유를 그린 도가 사상가.'
+          },
+          {
+            id: 'weil',
+            name: '시몬 베유',
+            originalName: 'Simone Weil',
+            era: '1909–1943',
+            category: 'philosopher',
+            bio: '고통받는 이들을 향한 순수한 주의력과 영혼의 중력을 사유한 프랑스 철학자.'
+          },
+          {
+            id: 'arendt',
+            name: '한나 아렌트',
+            originalName: 'Hannah Arendt',
+            era: '1906–1975',
+            category: 'philosopher',
+            bio: '사유의 부재가 낳는 위험을 경고하고 공적 세계에서의 행위와 용서를 탐구한 사상가.'
+          },
+          {
+            id: 'spinoza',
+            name: '바뤼흐 스피노자',
+            originalName: 'Baruch Spinoza',
+            era: '1632–1677',
+            category: 'philosopher',
+            bio: '렌즈를 깎으며 자연과 신, 기쁨과 자유의 기하학적 질서를 사유한 철학자.'
+          },
+          {
+            id: 'dostoevsky',
+            name: '표도르 도스토옙스키',
+            originalName: 'Fyodor Dostoevsky',
+            era: '1821–1881',
+            category: 'novelist',
+            bio: '인간 영혼의 심연, 죄와 구원, 자유의 무게를 치열하게 그려낸 러시아 문호.'
+          },
+          {
+            id: 'hesse',
+            name: '헤르만 헤세',
+            originalName: 'Hermann Hesse',
+            era: '1877–1962',
+            category: 'novelist',
+            bio: '내면의 분열을 건너 자기 자신에게로 걸어가는 구도의 여정을 쓴 독일 작가.'
+          },
+          {
+            id: 'camus',
+            name: '알베르 카뮈',
+            originalName: 'Albert Camus',
+            era: '1913–1960',
+            category: 'novelist',
+            bio: '부조리한 세계 한복판에서도 인간적 연대와 삶의 태양을 놓지 않았던 작가.'
+          },
+          {
+            id: 'kafka',
+            name: '프란츠 카프카',
+            originalName: 'Franz Kafka',
+            era: '1883–1924',
+            category: 'novelist',
+            bio: '일상의 틈새에 깃든 낯선 불안과 존재의 고독을 명징한 문장으로 포착한 작가.'
+          },
+          {
+            id: 'woolf',
+            name: '버지니아 울프',
+            originalName: 'Virginia Woolf',
+            era: '1882–1941',
+            category: 'novelist',
+            bio: '의식의 흐름과 일상의 빛나는 찰나를 섬세한 문체로 직조한 영국 모더니즘 작가.'
+          },
+          {
+            id: 'proust',
+            name: '마르셀 프루스트',
+            originalName: 'Marcel Proust',
+            era: '1871–1922',
+            category: 'novelist',
+            bio: '기억과 감각의 결을 따라 사라진 시간의 영원성을 복원해낸 프랑스 소설가.'
+          },
+          {
+            id: 'tolstoy',
+            name: '레프 톨스토이',
+            originalName: 'Leo Tolstoy',
+            era: '1828–1910',
+            category: 'novelist',
+            bio: '거대한 역사의 물결과 평범한 삶 속 진실의 순간을 함께 품었던 러시아 작가.'
+          },
+          {
+            id: 'borges',
+            name: '호르헤 루이스 보르헤스',
+            originalName: 'Jorge Luis Borges',
+            era: '1899–1986',
+            category: 'novelist',
+            bio: '도서관과 미궁, 거울과 무한의 시간으로 문학적 우주를 세운 아르헨티나 작가.'
+          },
+          {
+            id: 'soseki',
+            name: '나쓰메 소세키',
+            originalName: '夏目漱石',
+            era: '1867–1916',
+            category: 'novelist',
+            bio: '근대인의 고독과 이기심, 그리고 자연 속 초연한 미학을 그려낸 일본 근대 문학의 거장.'
+          }
+        ];
+
+        var PASSAGES = [
+          // Nietzsche
+          { id: 'nietzsche-1', text: '내면에서 빛나는 별을 탄생시키려면, 자기 안에 여전히 혼돈을 지니고 있어야 한다.', authorId: 'nietzsche', author: '프리드리히 니체', authorOriginal: 'Friedrich Nietzsche', era: '1844–1900', category: 'philosopher', work: '차라투스트라는 이렇게 말했다', workType: '저서 발췌', context: '질서 정연한 안주보다 내적 흔들림과 모순 속에서 비로소 창조적 삶이 움튼다는 서문 대목.' },
+          { id: 'nietzsche-2', text: '왜 살아야 하는지를 아는 사람은 그 어떤 어려움도 견뎌낼 수 있다.', authorId: 'nietzsche', author: '프리드리히 니체', authorOriginal: 'Friedrich Nietzsche', era: '1844–1900', category: 'philosopher', work: '우상의 황혼', workType: '잠언 · 단상', context: '〈잠언과 화살〉 장에서 삶의 목적의식이 지닌 버팀목의 힘을 압축해 남긴 문장.' },
+          { id: 'nietzsche-3', text: '괴물과 싸우는 사람은 그 과정에서 스스로 괴물이 되지 않도록 조심해야 하며, 네가 오랫동안 심연을 들여다볼 때 심연 역시 너를 들여다본다.', authorId: 'nietzsche', author: '프리드리히 니체', authorOriginal: 'Friedrich Nietzsche', era: '1844–1900', category: 'philosopher', work: '선악의 저편', workType: '잠언 · 단상', context: '어둠과 대결하는 자가 자기 자신을 잃지 않기 위해 경계해야 할 내면의 전염을 일깨우는 구절.' },
+          { id: 'nietzsche-4', text: '음악이 들리지 않는 이들에게는 춤추는 사람들이 미친 것처럼 보이기 마련이다.', authorId: 'nietzsche', author: '프리드리히 니체', authorOriginal: 'Friedrich Nietzsche', era: '1844–1900', category: 'philosopher', work: '즐거운 학문', workType: '저서 발췌', context: '타인의 열정이나 삶의 리듬은 밖에서 잴 수 없으며, 내면의 울림을 공유한 자만이 이해할 수 있음을 비유한다.' },
+
+          // Marcus Aurelius
+          { id: 'aurelius-1', text: '너의 영혼이 어떤 빛깔을 띠는가는 네가 평소 어떤 생각을 품고 있는가에 달려 있으니, 영혼은 생각들로 물들기 때문이다.', authorId: 'aurelius', author: '마르쿠스 아우렐리우스', authorOriginal: 'Marcus Aurelius', era: '121–180', category: 'philosopher', work: '명상록', workType: '수필 · 서한', context: '제5권에서 하루를 채우는 사소한 생각의 습관이 곧 한 사람의 인격을 빚어낸다고 스스로에게 다짐한 기록.' },
+          { id: 'aurelius-2', text: '그대에게 주어지는 외부의 사건은 그대를 상처 입히지 못하며, 그것을 재앙이라 판단하는 그대의 해석만이 그대를 흔들 뿐이다.', authorId: 'aurelius', author: '마르쿠스 아우렐리우스', authorOriginal: 'Marcus Aurelius', era: '121–180', category: 'philosopher', work: '명상록', workType: '수필 · 서한', context: '통제할 수 없는 외부 현실과 통제할 수 있는 내면의 판단을 구분하는 스토아 사유의 핵심 문장.' },
+          { id: 'aurelius-3', text: '선한 사람이란 어떤 존재인가를 두고 더 이상 논쟁하지 말고, 그냥 지금 그런 사람이 되어라.', authorId: 'aurelius', author: '마르쿠스 아우렐리우스', authorOriginal: 'Marcus Aurelius', era: '121–180', category: 'philosopher', work: '명상록', workType: '수필 · 서한', context: '제10권, 말로만 덕을 탐구하는 태도를 멈추고 오늘의 행동으로 증명하라는 단호한 자기 성찰.' },
+          { id: 'aurelius-4', text: '어디로도 피할 수 없을 만큼 고요하고 한적한 안식처가 바로 자기 자신의 영혼 속에 있다는 사실을 기억하라.', authorId: 'aurelius', author: '마르쿠스 아우렐리우스', authorOriginal: 'Marcus Aurelius', era: '121–180', category: 'philosopher', work: '명상록', workType: '수필 · 서한', context: '제4권, 시골 별장이나 바닷가를 찾아 헤매기 전에 언제든 물러설 수 있는 내면의 성채를 일깨운다.' },
+
+          // Seneca
+          { id: 'seneca-1', text: '우리에게 주어진 시간이 짧은 것이 아니라, 우리가 그 시간을 헛되이 흘려보내고 있을 뿐이다.', authorId: 'seneca', author: '세네카', authorOriginal: 'Lucius Annaeus Seneca', era: 'BC 4–AD 65', category: 'philosopher', work: '인생의 짧음에 대하여', workType: '저서 발췌', context: '인생이 짧다고 한탄하는 이들에게, 삶을 잘 쓰면 결코 짧지 않음을 설파하는 서두의 명문.' },
+          { id: 'seneca-2', text: '우리는 현실에서 실제로 겪는 일보다 머릿속 상상 속에서 훨씬 더 자주, 더 깊이 고통받는다.', authorId: 'seneca', author: '세네카', authorOriginal: 'Lucius Annaeus Seneca', era: 'BC 4–AD 65', category: 'philosopher', work: '도덕 서한집', workType: '수필 · 서한', context: '제13서한에서 루킬리우스에게 아직 오지 않은 불행을 미리 당겨 괴로워하지 말라고 건네는 조언.' },
+          { id: 'seneca-3', text: '날마다 단 한 시간이라도 자기 자신의 주인으로 살지 못한다면, 아무리 오래 산들 그것이 어찌 긴 삶이라 할 수 있겠는가.', authorId: 'seneca', author: '세네카', authorOriginal: 'Lucius Annaeus Seneca', era: 'BC 4–AD 65', category: 'philosopher', work: '인생의 짧음에 대하여', workType: '저서 발췌', context: '타인의 시선과 분주함에 빼앗기지 않은 온전한 자기 시간이 삶의 밀도를 결정한다는 통찰.' },
+          { id: 'seneca-4', text: '배가 어느 항구로 향하는지 알지 못한다면, 그 어떤 바람도 순풍이 될 수 없다.', authorId: 'seneca', author: '세네카', authorOriginal: 'Lucius Annaeus Seneca', era: 'BC 4–AD 65', category: 'philosopher', work: '도덕 서한집', workType: '수필 · 서한', context: '제71서한, 삶의 방향성이 먼저 서야 우연과 환경도 비로소 도움이 된다는 비유.' },
+
+          // Schopenhauer
+          { id: 'schopenhauer-1', text: '삶은 고통과 권태 사이를 시계추처럼 끊임없이 오가는 운동과 같다.', authorId: 'schopenhauer', author: '아르투어 쇼펜하우어', authorOriginal: 'Arthur Schopenhauer', era: '1788–1860', category: 'philosopher', work: '의지와 표상으로서의 세계', workType: '저서 발췌', context: '결핍에서는 고통이 생기고, 충족 뒤에는 권태가 찾아오는 인간 욕망의 구조를 꿰뚫은 문장.' },
+          { id: 'schopenhauer-2', text: '고독 속에서 자기 자신과 친구가 될 수 없는 사람은 타인과의 관계 속에서도 결코 온전한 평온을 얻지 못한다.', authorId: 'schopenhauer', author: '아르투어 쇼펜하우어', authorOriginal: 'Arthur Schopenhauer', era: '1788–1860', category: 'philosopher', work: '소품과 부록', workType: '저서 발췌', context: '〈인생의 지혜〉에서 내면이 충만한 사람일수록 홀로 있는 시간을 두려워하지 않음을 논한 대목.' },
+          { id: 'schopenhauer-3', text: '독서는 다른 사람의 머리로 대신 생각하는 일에 불과하므로, 책을 덮고 스스로 사유하는 시간이 반드시 뒤따라야 한다.', authorId: 'schopenhauer', author: '아르투어 쇼펜하우어', authorOriginal: 'Arthur Schopenhauer', era: '1788–1860', category: 'philosopher', work: '소품과 부록', workType: '잠언 · 단상', context: '〈독서와 책에 대하여〉에서 남의 문장을 좇기만 하느라 자기 사유의 근육을 잃지 말라고 당부한다.' },
+          { id: 'schopenhauer-4', text: '재능은 남들이 맞히지 못하는 과녁을 맞히는 명수라면, 천재는 남들이 아예 보지도 못하는 과녁을 맞히는 존재다.', authorId: 'schopenhauer', author: '아르투어 쇼펜하우어', authorOriginal: 'Arthur Schopenhauer', era: '1788–1860', category: 'philosopher', work: '의지와 표상으로서의 세계', workType: '저서 발췌', context: '숙련된 기술과 세계를 전혀 새로운 각도에서 바라보는 직관의 차이를 선명히 가른 비유.' },
+
+          // Kierkegaard
+          { id: 'kierkegaard-1', text: '삶은 뒤돌아볼 때만 비로소 이해되지만, 우리는 언제나 앞을 내다보며 살아가야만 한다.', authorId: 'kierkegaard', author: '쇠렌 키르케고르', authorOriginal: 'Søren Kierkegaard', era: '1813–1855', category: 'philosopher', work: '일기와 노트', workType: '잠언 · 단상', context: '선택의 순간에는 결코 모든 의미가 보이지 않으며, 지나고 나서야 비로소 서사가 드러나는 인간 실존의 역설.' },
+          { id: 'kierkegaard-2', text: '불안이란 자유가 제 스스로의 가능성을 내려다볼 때 느끼는 어지럼증이다.', authorId: 'kierkegaard', author: '쇠렌 키르케고르', authorOriginal: 'Søren Kierkegaard', era: '1813–1855', category: 'philosopher', work: '불안의 개념', workType: '저서 발췌', context: '불안을 단순한 결함이 아니라, 인간이 자유로운 선택을 할 수 있는 존재이기에 겪는 필연적 현기증으로 정의한다.' },
+          { id: 'kierkegaard-3', text: '가장 흔하면서도 가장 깊은 절망은 자기 자신이 되기를 원하지 않는 데서 비롯된다.', authorId: 'kierkegaard', author: '쇠렌 키르케고르', authorOriginal: 'Søren Kierkegaard', era: '1813–1855', category: 'philosopher', work: '죽음에 이르는 병', workType: '저서 발췌', context: '타인의 기준에 기대어 자기 본래의 얼굴을 외면할 때 영혼이 겪는 병증을 짚어낸 문장.' },
+          { id: 'kierkegaard-4', text: '영원한 것이 없는 곳에서는 시대의 소리도 공허하며, 오직 침묵 속에서만 진실한 물음이 태어난다.', authorId: 'kierkegaard', author: '쇠렌 키르케고르', authorOriginal: 'Søren Kierkegaard', era: '1813–1855', category: 'philosopher', work: '이것이냐 저것이냐', workType: '저서 발췌', context: '세상의 소음에서 한 걸음 물러나 내면의 정적과 마주할 때 비로소 삶의 진지함이 열린다.' },
+
+          // Zhuangzi
+          { id: 'zhuangzi-1', text: '사람들은 쓸모 있음의 쓸모만 알 뿐, 쓸모없음의 큰 쓸모는 알지 못한다.', authorId: 'zhuangzi', author: '장자', authorOriginal: '莊子', era: 'BC 369–BC 286', category: 'philosopher', work: '장자 · 인간세', workType: '저서 발췌', context: '옹이 많고 뒤틀려 목수에게 베이지 않고 천수를 누린 큰 나무의 우화 끝에 남긴 말.' },
+          { id: 'zhuangzi-2', text: '지극한 사람의 마음 쓰임은 거울과 같아서, 오는 것을 막지 않고 가는 것을 좇지 않으며 그저 비추어 응답할 뿐이다.', authorId: 'zhuangzi', author: '장자', authorOriginal: '莊子', era: 'BC 369–BC 286', category: 'philosopher', work: '장자 · 응제왕', workType: '저서 발췌', context: '지나간 집착을 붙잡지 않고 맑은 거울처럼 현재를 맞이하는 자유로운 마음의 태도.' },
+          { id: 'zhuangzi-3', text: '이것이 곧 저것이고 저것이 곧 이것이니, 시비의 경계가 없는 그 자리가 바로 도의 중심이다.', authorId: 'zhuangzi', author: '장자', authorOriginal: '莊子', era: 'BC 369–BC 286', category: 'philosopher', work: '장자 · 제물론', workType: '저서 발췌', context: '편협한 옳고 그름의 잣대를 내려놓을 때 비로소 만물이 고르게 보인다는 제물론의 핵심 사유.' },
+          { id: 'zhuangzi-4', text: '오리의 다리가 짧다 하여 억지로 늘이면 슬퍼하고, 학의 다리가 길다 하여 억지로 자르면 아파하니, 본래 타고난 결을 거스르지 말라.', authorId: 'zhuangzi', author: '장자', authorOriginal: '莊子', era: 'BC 369–BC 286', category: 'philosopher', work: '장자 · 변무', workType: '저서 발췌', context: '획일적인 기준에 맞추려 애쓰기보다 저마다의 고유한 성정을 존중하라는 비유.' },
+
+          // Simone Weil
+          { id: 'weil-1', text: '진정한 주의력이란 무언가를 애써 붙잡으려 힘주는 것이 아니라, 영혼을 텅 비워 상대가 들어올 자리를 내어주는 기다림이다.', authorId: 'weil', author: '시몬 베유', authorOriginal: 'Simone Weil', era: '1909–1943', category: 'philosopher', work: '중력과 은총', workType: '잠언 · 단상', context: '〈주의력〉 장에서 공부와 사랑 모두 자기 아집을 멈추고 상대를 온전히 바라보는 데서 시작됨을 설파한다.' },
+          { id: 'weil-2', text: '가장 순수하고 드문 형태의 관대함은 곧 온전한 주의를 기울여 누군가를 바라보는 일이다.', authorId: 'weil', author: '시몬 베유', authorOriginal: 'Simone Weil', era: '1909–1943', category: 'philosopher', work: '중력과 은총', workType: '잠언 · 단상', context: '고통받는 이의 말에 판단 없이 귀 기울이는 시선 자체가 인간이 건넬 수 있는 최고의 선물임을 말한다.' },
+          { id: 'weil-3', text: '뿌리 내림이야말로 아마도 인간 영혼이 지닌 가장 중요하면서도 가장 간과된 욕구일 것이다.', authorId: 'weil', author: '시몬 베유', authorOriginal: 'Simone Weil', era: '1909–1943', category: 'philosopher', work: '뿌리 내리기', workType: '저서 발췌', context: '공동체와 기억, 장소 속에서 자신이 속한 세계와 연결되려는 인간 영혼의 근원적 갈망을 짚은 문장.' },
+          { id: 'weil-4', text: '모든 죄악은 빈자리를 메우려는 조급함에서 오고, 모든 은총은 그 빈자리를 견뎌내는 힘에서 온다.', authorId: 'weil', author: '시몬 베유', authorOriginal: 'Simone Weil', era: '1909–1943', category: 'philosopher', work: '중력과 은총', workType: '잠언 · 단상', context: '상실이나 공허를 섣불리 채우려 하지 않고 그 여백을 응시할 때 내면의 변화가 찾아온다는 성찰.' },
+
+          // Hannah Arendt
+          { id: 'arendt-1', text: '인간은 죽기 위해 태어난 존재가 아니라, 무언가를 새롭게 시작하기 위해 태어난 존재다.', authorId: 'arendt', author: '한나 아렌트', authorOriginal: 'Hannah Arendt', era: '1906–1975', category: 'philosopher', work: '인간의 조건', workType: '저서 발췌', context: '아렌트가 제시한 탄생성(Natality) 개념으로, 인간 행위가 지닌 기적 같은 새로운 시작의 힘을 일컫는다.' },
+          { id: 'arendt-2', text: '악이 거창하고 사악한 동기에서 비롯될 것이라 믿기 쉽지만, 정작 세계를 무너뜨리는 것은 아무 생각 없이 시키는 대로 따르는 사유의 부재다.', authorId: 'arendt', author: '한나 아렌트', authorOriginal: 'Hannah Arendt', era: '1906–1975', category: 'philosopher', work: '예루살렘의 아이히만', workType: '저서 발췌', context: '타인의 처지에서 생각해보기를 멈춘 평범함이 어떻게 거대한 비극을 낳는지 경고하는 문장.' },
+          { id: 'arendt-3', text: '용서란 돌이킬 수 없는 과거의 사슬에서 우리를 풀어주어, 오늘 다시 새로운 행위를 시작할 수 있게 만드는 유일한 힘이다.', authorId: 'arendt', author: '한나 아렌트', authorOriginal: 'Hannah Arendt', era: '1906–1975', category: 'philosopher', work: '인간의 조건', workType: '저서 발췌', context: '과거의 잘못에 영원히 묶여 있지 않고 미래를 열기 위해 인간이 발명한 구원의 행위로서의 용서.' },
+          { id: 'arendt-4', text: '사유하지 않는 삶은 살아가는 데 큰 불편이 없을지 몰라도, 스스로의 양심과 마주해야 하는 결정적 순간에는 아무런 힘도 쓰지 못한다.', authorId: 'arendt', author: '한나 아렌트', authorOriginal: 'Hannah Arendt', era: '1906–1975', category: 'philosopher', work: '정신의 삶', workType: '저서 발췌', context: '자기 자신과 끊임없이 내면의 대화를 나누는 습관이 왜 위기의 시대에 윤리적 방파제가 되는지 설명한다.' },
+
+          // Spinoza
+          { id: 'spinoza-1', text: '인간의 행동을 비웃지도 말고, 한탄하지도 말고, 저주하지도 말고, 오직 이해하도록 힘쓰라.', authorId: 'spinoza', author: '바뤼흐 스피노자', authorOriginal: 'Baruch Spinoza', era: '1632–1677', category: 'philosopher', work: '정치론', workType: '저서 발췌', context: '감정적 비난 대신 원인과 필연성을 차분히 들여다보는 이성의 태도를 밝힌 유명한 서문 문장.' },
+          { id: 'spinoza-2', text: '기쁨이란 인간이 덜 완전한 상태에서 더 큰 완전성의 상태로 나아가는 이행 그 자체다.', authorId: 'spinoza', author: '바뤼흐 스피노자', authorOriginal: 'Baruch Spinoza', era: '1632–1677', category: 'philosopher', work: '에티카', workType: '저서 발췌', context: '제3부 〈감정의 기원과 본성에 대하여〉에서 삶과 활동력을 북돋우는 긍정적 정동의 본질을 정의한다.' },
+          { id: 'spinoza-3', text: '자유인은 죽음에 대해 가장 적게 생각하며, 그의 지혜는 죽음이 아니라 삶에 대한 명상이다.', authorId: 'spinoza', author: '바뤼흐 스피노자', authorOriginal: 'Baruch Spinoza', era: '1632–1677', category: 'philosopher', work: '에티카', workType: '저서 발췌', context: '제4부 정리 67, 공포에서 비롯된 체념이 아니라 삶의 역량을 긍정하는 이성적 자유를 노래한다.' },
+          { id: 'spinoza-4', text: '탁월하고 고귀한 모든 것은 드문 만큼이나 이루기 어렵다.', authorId: 'spinoza', author: '바뤼흐 스피노자', authorOriginal: 'Baruch Spinoza', era: '1632–1677', category: 'philosopher', work: '에티카', workType: '저서 발췌', context: '거대한 기하학적 논증을 마무리하며 진정한 마음의 평화와 자유에 이르는 길이 쉽지 않음을 담담히 남긴 마지막 문장.' },
+
+          // Dostoevsky
+          { id: 'dostoevsky-1', text: '인간이 불행한 이유는 자기가 얼마나 행복한지를 스스로 알지 못하기 때문이며, 오직 그 이유 하나뿐이다.', authorId: 'dostoevsky', author: '표도르 도스토옙스키', authorOriginal: 'Fyodor Dostoevsky', era: '1821–1881', category: 'novelist', work: '악령', workType: '소설 발췌', context: '일상 속에 이미 놓인 온기와 생명의 경이를 알아차리는 순간 세계가 완전히 달라 보인다는 통찰.' },
+          { id: 'dostoevsky-2', text: '무엇보다 자기 자신에게 거짓말을 하지 마십시오, 스스로를 속이는 사람은 진실과 거짓을 분별할 힘마저 잃게 되니까요.', authorId: 'dostoevsky', author: '표도르 도스토옙스키', authorOriginal: 'Fyodor Dostoevsky', era: '1821–1881', category: 'novelist', work: '카라마조프 가의 형제들', workType: '소설 발췌', context: '조시마 장로가 허영과 가면을 벗고 자기 내면에 정직할 것을 당부하며 건네는 문장.' },
+          { id: 'dostoevsky-3', text: '단 1분의 온전한 환희만으로도 어쩌면 한 사람의 평생을 감당할 수 있지 않을까요?', authorId: 'dostoevsky', author: '표도르 도스토옙스키', authorOriginal: 'Fyodor Dostoevsky', era: '1821–1881', category: 'novelist', work: '백야', workType: '소설 발췌', context: '나스텐카를 향한 마음을 접으며 몽상가 화자가 마지막 아침에 건네는 눈물겨운 축복.' },
+          { id: 'dostoevsky-4', text: '고통과 고뇌는 넓은 시야와 깊은 마음을 지닌 사람에게 언제나 필연적으로 따르는 법이다.', authorId: 'dostoevsky', author: '표도르 도스토옙스키', authorOriginal: 'Fyodor Dostoevsky', era: '1821–1881', category: 'novelist', work: '죄와 벌', workType: '소설 발췌', context: '라스콜니코프가 죄책과 각성의 문턱에서 인간의 내적 성숙이 치르는 대가를 깨닫는 대목.' },
+
+          // Hesse
+          { id: 'hesse-1', text: '새는 알에서 나오려고 투쟁한다, 알은 세계이며 태어나려는 자는 하나의 세계를 깨뜨려야 한다.', authorId: 'hesse', author: '헤르만 헤세', authorOriginal: 'Hermann Hesse', era: '1877–1962', category: 'novelist', work: '데미안', workType: '소설 발췌', context: '싱클레어가 데미안에게서 받은 쪽지 속 문장으로, 낡은 안주를 부수고 자기 삶으로 나아가는 성장의 은유.' },
+          { id: 'hesse-2', text: '지혜는 남에게 말로 전해줄 수 있는 것이 아니며, 한 사람이 다른 이에게 지식을 전할 수는 있어도 지혜는 스스로 살아내야만 얻는다.', authorId: 'hesse', author: '헤르만 헤세', authorOriginal: 'Hermann Hesse', era: '1877–1962', category: 'novelist', work: '싯다르타', workType: '소설 발췌', context: '오랜 방황 끝에 강물 앞에서 깨달음을 얻은 싯다르타가 친구 고빈다에게 전하는 고백.' },
+          { id: 'hesse-3', text: '우리는 서로를 완전히 이해할 수는 없지만, 한 사람은 다른 사람에게 자기 자신의 내면을 비추어보는 거울이 되어줄 수 있다.', authorId: 'hesse', author: '헤르만 헤세', authorOriginal: 'Hermann Hesse', era: '1877–1962', category: 'novelist', work: '데미안', workType: '소설 발췌', context: '서문의 문장처럼, 각자의 삶이 온전하고 유일하기에 타인과의 만남이 더욱 신비롭다는 사색.' },
+          { id: 'hesse-4', text: '모든 시작에는 마법이 깃들어 있어, 그 신비한 힘이 우리를 지켜주고 살아갈 수 있게 해준다.', authorId: 'hesse', author: '헤르만 헤세', authorOriginal: 'Hermann Hesse', era: '1877–1962', category: 'novelist', work: '유리알 유희', workType: '소설 발췌', context: '소설 속 시 〈단계〉에서 삶의 매 마디를 두려워하지 말고 새로운 문턱을 넘어가라고 부르는 구절.' },
+
+          // Camus
+          { id: 'camus-1', text: '한겨울 한복판에서 나는 비로소 내 안에 꺾이지 않는 여름이 있다는 것을 깨달았다.', authorId: 'camus', author: '알베르 카뮈', authorOriginal: 'Albert Camus', era: '1913–1960', category: 'novelist', work: '여름 · 티파사로의 귀환', workType: '수필 · 서한', context: '어둡고 냉혹한 시대의 겨울을 지나면서도 내면 깊은 곳에 살아 있는 삶의 빛을 확인한 산문.' },
+          { id: 'camus-2', text: '산 정상을 향한 투쟁 그 자체만으로도 인간의 마음을 가득 채우기에 충분하니, 우리는 시지프가 행복하다고 상상해야 한다.', authorId: 'camus', author: '알베르 카뮈', authorOriginal: 'Albert Camus', era: '1913–1960', category: 'novelist', work: '시지프 신화', workType: '저서 발췌', context: '끝없이 바위를 밀어 올리는 무의미 속에서도 자기 운명을 정면으로 껴안는 인간의 존엄을 선언한 결말.' },
+          { id: 'camus-3', text: '질병과 재앙의 한복판에서도 인간에게는 경멸할 것보다 찬탄할 것이 더 많다는 사실을 배웠다.', authorId: 'camus', author: '알베르 카뮈', authorOriginal: 'Albert Camus', era: '1913–1960', category: 'novelist', work: '페스트', workType: '소설 발췌', context: '의사 리유가 페스트가 휩쓸고 간 도시 오랑의 연대기를 갈무리하며 남긴 조용한 증언.' },
+          { id: 'camus-4', text: '진정한 관대함이란 미래를 향한 약속이 아니라, 지금 이 현재에 모든 것을 아낌없이 내어주는 데 있다.', authorId: 'camus', author: '알베르 카뮈', authorOriginal: 'Albert Camus', era: '1913–1960', category: 'novelist', work: '반항하는 인간', workType: '저서 발췌', context: '막연한 내일의 이상을 위해 오늘의 삶과 타인을 유예하지 말라는 카뮈의 윤리적 태도.' },
+
+          // Kafka
+          { id: 'kafka-1', text: '책이란 우리 안의 꽁꽁 얼어붙은 바다를 내리치는 도끼여야만 한다.', authorId: 'kafka', author: '프란츠 카프카', authorOriginal: 'Franz Kafka', era: '1883–1924', category: 'novelist', work: '오스카 폴라크에게 보낸 편지', workType: '수필 · 서한', context: '우리를 그저 기분 좋게 만드는 책이 아니라, 영혼의 무감각을 깨뜨려 아픔을 느끼게 하는 문학의 본질.' },
+          { id: 'kafka-2', text: '네 방에서 굳이 밖으로 나가지 않아도 좋다, 그저 책상 앞에 앉아 귀를 기울이고 고요히 기다리라, 그러면 세상이 스스로 가면을 벗고 네 앞에 모습을 드러낼 것이다.', authorId: 'kafka', author: '프란츠 카프카', authorOriginal: 'Franz Kafka', era: '1883–1924', category: 'novelist', work: '주라 아포리즘', workType: '잠언 · 단상', context: '109번 단상, 조급히 밖을 헤매기보다 침묵과 응시 속에서 진실이 다가오기를 기다리는 태도.' },
+          { id: 'kafka-3', text: '어느 지점을 넘어서면 더 이상 되돌아갈 길이 없으니, 바로 그 지점에 반드시 도달해야만 한다.', authorId: 'kafka', author: '프란츠 카프카', authorOriginal: 'Franz Kafka', era: '1883–1924', category: 'novelist', work: '주라 아포리즘', workType: '잠언 · 단상', context: '5번 단상, 어중간한 안전지대에 머무르지 않고 진정한 변화가 시작되는 문턱을 건너야 한다는 말.' },
+          { id: 'kafka-4', text: '새 한 마리가 제 새장을 찾아 스스로 날아다니는 모습처럼, 우리도 때로는 스스로를 가둘 규율이나 안식처를 찾아 헤맨다.', authorId: 'kafka', author: '프란츠 카프카', authorOriginal: 'Franz Kafka', era: '1883–1924', category: 'novelist', work: '주라 아포리즘', workType: '잠언 · 단상', context: '16번 단상, 자유를 갈망하면서도 동시에 익숙한 구속을 찾는 인간 마음의 모순을 포착한 우화.' },
+
+          // Virginia Woolf
+          { id: 'woolf-1', text: '여성이 소설을 쓰려면 돈과 자기만의 방이 반드시 있어야 한다.', authorId: 'woolf', author: '버지니아 울프', authorOriginal: 'Virginia Woolf', era: '1882–1941', category: 'novelist', work: '자기만의 방', workType: '저서 발췌', context: '창조와 독립적 사유가 추상적 정신만이 아니라 물리적 공간과 경제적 자립 위에서 자라남을 밝힌 명문.' },
+          { id: 'woolf-2', text: '다른 어떤 사람보다도 먼저 자기 자신이 되는 것이 가장 중요하며, 남들에게 어떻게 보일지보다 나만의 시선으로 사물을 바라보라.', authorId: 'woolf', author: '버지니아 울프', authorOriginal: 'Virginia Woolf', era: '1882–1941', category: 'novelist', work: '자기만의 방', workType: '저서 발췌', context: '타인의 시선에 맞추어 스스로를 깎아내지 말고 고유한 감수성과 판단을 지켜내라는 권고.' },
+          { id: 'woolf-3', text: '거대한 계시는 좀처럼 오지 않으며, 그 대신 일상의 어둠 속에 불현듯 켜지는 작은 성냥불 같은 찰나들이 있을 뿐이다.', authorId: 'woolf', author: '버지니아 울프', authorOriginal: 'Virginia Woolf', era: '1882–1941', category: 'novelist', work: '등대로', workType: '소설 발췌', context: '화가 릴리 브리스코가 거창한 의미 대신 평범한 하루 속에서 빛나는 존재의 순간들을 깨닫는 대목.' },
+          { id: 'woolf-4', text: '누군가를 온전히 안다고 말하기 전에 우리는 수없이 흔들리고 흩어지며, 문장 한 줄을 쓰는 일조차 바다의 파도를 건지는 것과 같다.', authorId: 'woolf', author: '버지니아 울프', authorOriginal: 'Virginia Woolf', era: '1882–1941', category: 'novelist', work: '파도', workType: '소설 발췌', context: '흘러가는 시간과 붙잡을 수 없는 감각을 언어로 길어 올리는 작가의 내면 독백.' },
+
+          // Marcel Proust
+          { id: 'proust-1', text: '진정한 발견의 항해는 새로운 땅을 찾아 떠나는 것이 아니라, 새로운 눈을 갖는 데 있다.', authorId: 'proust', author: '마르셀 프루스트', authorOriginal: 'Marcel Proust', era: '1871–1922', category: 'novelist', work: '잃어버린 시간을 찾아서 · 갇힌 여인', workType: '소설 발췌', context: '익숙한 풍경이라도 우리가 세상을 바라보는 감각과 시선이 달라질 때 완전히 새로운 우주가 열린다는 사유.' },
+          { id: 'proust-2', text: '진정한 낙원은 우리가 이미 잃어버린 낙원뿐이다.', authorId: 'proust', author: '마르셀 프루스트', authorOriginal: 'Marcel Proust', era: '1871–1922', category: 'novelist', work: '잃어버린 시간을 찾아서 · 되찾은 시간', workType: '소설 발췌', context: '지나간 뒤에야 비로소 기억 속에서 순수한 광채를 되찾는 시간의 아이러니를 담은 문장.' },
+          { id: 'proust-3', text: '우리가 무심코 지나쳤던 차 한 잔과 마들렌 한 조각의 향기 속에, 잊힌 줄 알았던 모든 세월의 건축물이 고스란히 잠들어 있다.', authorId: 'proust', author: '마르셀 프루스트', authorOriginal: 'Marcel Proust', era: '1871–1922', category: 'novelist', work: '잃어버린 시간을 찾아서 · 스완네 집 쪽으로', workType: '소설 발췌', context: '이성의 기억이 닿지 못하는 과거를 단숨에 되살려내는 비자발적 기억의 순간을 묘사한 대목.' },
+          { id: 'proust-4', text: '우리는 오직 고통을 통해서만 사유의 깊은 우물을 길어 올릴 수 있으며, 기쁨이 주는 시간보다 상실이 남긴 시간이 우리를 더 오래 성숙시킨다.', authorId: 'proust', author: '마르셀 프루스트', authorOriginal: 'Marcel Proust', era: '1871–1922', category: 'novelist', work: '잃어버린 시간을 찾아서 · 되찾은 시간', workType: '소설 발췌', context: '상처가 예술과 통찰의 원천으로 변환되는 과정을 성찰한 후기 권의 문장.' },
+
+          // Tolstoy
+          { id: 'tolstoy-1', text: '행복한 가정은 모두 비슷한 모습이지만, 불행한 가정은 저마다 나름의 이유로 불행하다.', authorId: 'tolstoy', author: '레프 톨스토이', authorOriginal: 'Leo Tolstoy', era: '1828–1910', category: 'novelist', work: '안나 카레니나', workType: '소설 발췌', context: '인간의 결합이 지닌 조화의 조건과 어긋남의 수많은 결을 단 한 줄로 열어젖힌 세계 문학의 첫 문장.' },
+          { id: 'tolstoy-2', text: '모든 사람은 세상을 바꾸겠다고 생각하지만, 정작 자기 자신을 바꾸겠다고 생각하는 사람은 드물다.', authorId: 'tolstoy', author: '레프 톨스토이', authorOriginal: 'Leo Tolstoy', era: '1828–1910', category: 'novelist', work: '수필과 서한집', workType: '수필 · 서한', context: '바깥의 제도와 타인을 탓하기 전에 자기 삶의 진실성부터 돌아보라는 만년의 성찰.' },
+          { id: 'tolstoy-3', text: '어쩌면 내가 지금까지 살아온 모든 날들이 잘못되었던 것은 아닐까 하는 물음이 마지막 순간에야 찾아왔다.', authorId: 'tolstoy', author: '레프 톨스토이', authorOriginal: 'Leo Tolstoy', era: '1828–1910', category: 'novelist', work: '이반 일리치의 죽음', workType: '소설 발췌', context: '세속적 체면과 성공만을 좇던 판사 이반 일리치가 죽음의 문턱에서 비로소 삶의 진실을 마주하는 장면.' },
+          { id: 'tolstoy-4', text: '우리에게 가장 소중한 때는 오직 지금 이 순간이며, 가장 중요한 사람은 지금 내 곁에 있는 사람이다.', authorId: 'tolstoy', author: '레프 톨스토이', authorOriginal: 'Leo Tolstoy', era: '1828–1910', category: 'novelist', work: '세 가지 질문', workType: '소설 발췌', context: '왕이 현자를 찾아가 물은 세 가지 질문에 대해, 눈앞의 생명을 돌보는 지금 여기가 답임을 일깨운다.' },
+
+          // Borges
+          { id: 'borges-1', text: '나는 언제나 천국이 도서관의 모습일 것이라고 상상해왔다.', authorId: 'borges', author: '호르헤 루이스 보르헤스', authorOriginal: 'Jorge Luis Borges', era: '1899–1986', category: 'novelist', work: '선물들의 시', workType: '수필 · 서한', context: '점점 시력을 잃어가면서도 국립도서관장으로서 책의 숲 속에서 느낀 경외감을 담은 고백.' },
+          { id: 'borges-2', text: '인간에게 주어진 모든 시간은 결국 두 갈래 이상으로 갈라지며, 우리가 선택하지 않은 무수한 미래들이 어딘가에서 조용히 자라난다.', authorId: 'borges', author: '호르헤 루이스 보르헤스', authorOriginal: 'Jorge Luis Borges', era: '1899–1986', category: 'novelist', work: '픽션들 · 끝없이 두 갈래로 갈라지는 길들이 있는 정원', workType: '소설 발췌', context: '직선으로 흐르는 시간이 아니라 가능성의 미궁으로 뻗어 나가는 서사의 우주를 그린 구절.' },
+          { id: 'borges-3', text: '다른 사람들이 자신이 쓴 문장을 자랑스러워할 때, 나는 내가 읽었던 문장들을 조용히 자랑스러워한다.', authorId: 'borges', author: '호르헤 루이스 보르헤스', authorOriginal: 'Jorge Luis Borges', era: '1899–1986', category: 'novelist', work: '기억의 서', workType: '수필 · 서한', context: '쓰기 이전에 깊은 읽기가 한 사람의 내면과 문체를 빚어낸다는 보르헤스 특유의 겸허한 미학.' },
+          { id: 'borges-4', text: '망각은 기억의 오류가 아니라, 너무 많은 세부의 무게에 짓눌리지 않고 생각할 수 있도록 허락된 은총이다.', authorId: 'borges', author: '호르헤 루이스 보르헤스', authorOriginal: 'Jorge Luis Borges', era: '1899–1986', category: 'novelist', work: '픽션들 · 기억의 천재 푸네스', workType: '소설 발췌', context: '단 하나도 잊지 못하는 푸네스가 오히려 일반화하고 사유하는 능력을 잃어버리는 역설을 통해 망각의 의미를 짚는다.' },
+
+          // Natsume Soseki
+          { id: 'soseki-1', text: '지혜로 일하면 모가 나고, 정에 휩쓸리면 흘러가 버리며, 고집을 부리면 답답해지니, 어쨌든 인간 세상은 살기 어렵다.', authorId: 'soseki', author: '나쓰메 소세키', authorOriginal: '夏目漱石', era: '1867–1916', category: 'novelist', work: '풀베개', workType: '소설 발췌', context: '산길을 오르는 젊은 화가가 인간 세상의 얽힘과 예술가의 거리를 사유하며 읊조리는 유명한 서두.' },
+          { id: 'soseki-2', text: '인간은 평소에는 모두 선량해 보이지만, 막상 위급한 순간이 닥치면 갑자기 다른 얼굴로 변하기 마련이니 그래서 두려운 것이다.', authorId: 'soseki', author: '나쓰메 소세키', authorOriginal: '夏目漱石', era: '1867–1916', category: 'novelist', work: '마음', workType: '소설 발췌', context: '‘선생님’이 젊은 제자에게 인간 내면의 취약함과 이기심에 대한 쓰라린 고백을 시작하며 꺼낸 말.' },
+          { id: 'soseki-3', text: '자연의 색채와 바람 소리를 한 걸음 물러나 바라볼 때 비로소, 우리를 조이던 일상의 근심도 한 폭의 풍경처럼 고요해진다.', authorId: 'soseki', author: '나쓰메 소세키', authorOriginal: '夏目漱石', era: '1867–1916', category: 'novelist', work: '풀베개', workType: '소설 발췌', context: '이해관계를 떠나 대상을 담담히 관조하는 ‘비인정(非人情)’의 미학을 풀어낸 대목.' },
+          { id: 'soseki-4', text: '자유와 독립과 자아로 가득 찬 현대에 태어난 우리는, 그 대가로 어쩌면 누구나 이 지독한 고독을 짊어져야만 하는지도 모른다.', authorId: 'soseki', author: '나쓰메 소세키', authorOriginal: '夏目漱石', era: '1867–1916', category: 'novelist', work: '마음', workType: '소설 발췌', context: '개인주의 시대로 건너오며 얻은 자유 이면의 쓸쓸함을 통찰한 근대 문학의 명구.' }
+        ];
+
+        // =========================================================================
+        // 2. Inline SVG Icons (Safe offline & file://)
+        // =========================================================================
+        function iconSvg(name, size) {
+          var s = size || 16;
+          var common = 'width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"';
+          switch (name) {
+            case 'shuffle':
+              return '<svg ' + common + '><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>';
+            case 'arrow-left':
+              return '<svg ' + common + '><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>';
+            case 'copy':
+              return '<svg ' + common + '><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+            case 'check':
+              return '<svg ' + common + '><polyline points="20 6 9 17 4 12"></polyline></svg>';
+            case 'bookmark':
+              return '<svg ' + common + '><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>';
+            case 'bookmark-fill':
+              return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>';
+            case 'clock':
+              return '<svg ' + common + '><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>';
+            case 'play':
+              return '<svg ' + common + '><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>';
+            case 'pause':
+              return '<svg ' + common + '><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
+            case 'plus':
+              return '<svg ' + common + '><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
+            case 'trash':
+              return '<svg ' + common + '><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>';
+            case 'volume':
+              return '<svg ' + common + '><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>';
+            case 'volume-x':
+              return '<svg ' + common + '><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>';
+            case 'bell':
+              return '<svg ' + common + '><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>';
+            case 'bell-off':
+              return '<svg ' + common + '><path d="M13.73 21a2 2 0 0 1-3.46 0"></path><path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path><path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path><path d="M18 8a6 6 0 0 0-9.33-5"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>';
+            case 'sun':
+              return '<svg ' + common + '><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
+            case 'moon':
+              return '<svg ' + common + '><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+            case 'chevron-right':
+              return '<svg ' + common + '><polyline points="9 18 15 12 9 6"></polyline></svg>';
+            case 'book':
+              return '<svg ' + common + '><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>';
+            case 'download':
+              return '<svg ' + common + '><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>';
+            default:
+              return '';
+          }
+        }
+
+        // =========================================================================
+        // 3. Utilities & Storage
+        // =========================================================================
+        var STORAGE_KEYS = {
+          SAVED_IDS: 'sayu_saved_passage_ids_v1',
+          CUSTOM_PASSAGES: 'sayu_custom_passages_v1',
+          SCHEDULED_TIMES: 'sayu_scheduled_times_v1',
+          INTERVAL_SEC: 'sayu_interval_seconds_v1',
+          SCHEDULE_MODE: 'sayu_schedule_mode_v1',
+          SOUND_ENABLED: 'sayu_sound_enabled_v1',
+          DARK_MODE: 'sayu_dark_mode_v1',
+          DELIVERY_LOG: 'sayu_delivery_log_v1'
+        };
+
+        var DEFAULT_SCHEDULED_TIMES = [
+          { id: 'morning', time: '08:30', enabled: true, label: '아침의 문장' },
+          { id: 'noon', time: '12:30', enabled: true, label: '정오의 사유' },
+          { id: 'evening', time: '21:30', enabled: true, label: '밤의 서재' }
+        ];
+
+        function safeReadJson(key, fallback) {
+          try {
+            var raw = localStorage.getItem(key);
+            if (!raw) return fallback;
+            return JSON.parse(raw);
+          } catch (e) {
+            return fallback;
+          }
+        }
+
+        function safeWriteJson(key, val) {
+          try {
+            localStorage.setItem(key, JSON.stringify(val));
+          } catch (e) {
+            // Ignore in restricted file:// contexts
+          }
+        }
+
+        function escapeHtml(str) {
+          if (str === null || str === undefined) return '';
+          return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+        }
+
+        function formatDurationSeconds(totalSeconds) {
+          var safe = Math.max(0, Math.floor(totalSeconds));
+          var hours = Math.floor(safe / 3600);
+          var minutes = Math.floor((safe % 3600) / 60);
+          var seconds = safe % 60;
+          var pad = function (n) { return String(n).padStart(2, '0'); };
+          if (hours > 0) {
+            return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+          }
+          return pad(minutes) + ':' + pad(seconds);
+        }
+
+        function formatIntervalLabel(seconds) {
+          if (seconds < 60) return seconds + '초마다';
+          if (seconds < 3600) {
+            var mins = Math.floor(seconds / 60);
+            var rem = seconds % 60;
+            return rem === 0 ? mins + '분마다' : mins + '분 ' + rem + '초마다';
+          }
+          var hrs = Math.floor(seconds / 3600);
+          var remMins = Math.floor((seconds % 3600) / 60);
+          return remMins === 0 ? hrs + '시간마다' : hrs + '시간 ' + remMins + '분마다';
+        }
+
+        function formatTimeOfDay(iso) {
+          try {
+            var d = new Date(iso);
+            return d.toLocaleTimeString('ko-KR', {
+              hour: '2-digit',
+              minute: '2-digit',
+              second: '2-digit',
+              hour12: false
+            });
+          } catch (e) {
+            return '';
+          }
+        }
+
+        function playGentleChime() {
+          try {
+            var AudioCtx = window.AudioContext || window.webkitAudioContext;
+            if (!AudioCtx) return;
+            var ctx = new AudioCtx();
+            var now = ctx.currentTime;
+            var freqs = [440, 659.25];
+            freqs.forEach(function (freq, idx) {
+              var osc = ctx.createOscillator();
+              var gain = ctx.createGain();
+              osc.type = 'sine';
+              osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+              gain.gain.setValueAtTime(0.0001, now + idx * 0.08);
+              gain.gain.exponentialRampToValueAtTime(0.06, now + idx * 0.08 + 0.04);
+              gain.gain.exponentialRampToValueAtTime(0.0001, now + idx * 0.08 + 1.4);
+              osc.connect(gain);
+              gain.connect(ctx.destination);
+              osc.start(now + idx * 0.08);
+              osc.stop(now + idx * 0.08 + 1.5);
+            });
+            setTimeout(function () {
+              if (ctx.state !== 'closed') {
+                ctx.close().catch(function () {});
+              }
+            }, 1800);
+          } catch (e) {
+            // Ignore autoplay restriction
+          }
+        }
+
+        function copyTextSafe(text, onSuccess) {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(onSuccess).catch(function () {
+              fallbackCopy(text, onSuccess);
+            });
+          } else {
+            fallbackCopy(text, onSuccess);
+          }
+        }
+
+        function fallbackCopy(text, onSuccess) {
+          try {
+            var ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+            if (onSuccess) onSuccess();
+          } catch (e) {
+            // ignore
+          }
+        }
+
+        function buildStandaloneHtml() {
+          var clone = document.documentElement.cloneNode(true);
+          clone.removeAttribute('class');
+
+          var head = clone.querySelector('head');
+          if (head) {
+            var headScripts = head.querySelectorAll('script');
+            for (var i = 0; i < headScripts.length; i++) {
+              headScripts[i].parentNode.removeChild(headScripts[i]);
+            }
+          }
+
+          var appNode = clone.querySelector('#app');
+          if (appNode) {
+            appNode.innerHTML = '';
+          }
+
+          return '<!doctype html>\n' + clone.outerHTML;
+        }
+
+        function downloadStandaloneHtml() {
+          try {
+            var html = buildStandaloneHtml();
+            var blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'index.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(function () {
+              URL.revokeObjectURL(url);
+            }, 1000);
+            state.arrivalNotice = 'index.html 파일을 다운로드했습니다. GitHub에 올려 Vercel로 바로 배포하거나 더블 클릭해 실행할 수 있습니다.';
+            render();
+          } catch (e) {
+            state.arrivalNotice = '다운로드가 제한된 환경이라면 아래의 "HTML 코드 복사"를 이용해 주세요.';
+            render();
+          }
+        }
+
+        function copyStandaloneHtml() {
+          var html = buildStandaloneHtml();
+          copyTextSafe(html, function () {
+            state.copiedSource = true;
+            state.arrivalNotice = '전체 index.html 소스 코드가 클립보드에 복사되었습니다.';
+            render();
+            setTimeout(function () {
+              state.copiedSource = false;
+              render();
+            }, 2000);
+          });
+        }
+
+        // =========================================================================
+        // 4. Application State
+        // =========================================================================
+        var initialInterval = safeReadJson(STORAGE_KEYS.INTERVAL_SEC, 60);
+        if (typeof initialInterval !== 'number' || initialInterval < 5) initialInterval = 60;
+
+        var initialPassage = PASSAGES[Math.floor(Math.random() * PASSAGES.length)];
+
+        var state = {
+          activeView: 'desk', // 'desk' | 'authors' | 'schedule' | 'archive'
+          isDark: Boolean(safeReadJson(STORAGE_KEYS.DARK_MODE, false)),
+          customPassages: safeReadJson(STORAGE_KEYS.CUSTOM_PASSAGES, []),
+          savedIds: safeReadJson(STORAGE_KEYS.SAVED_IDS, []),
+          filterScope: 'all', // 'all' | 'philosopher' | 'novelist'
+          selectedAuthorId: null,
+          showContext: true,
+          copiedDesk: false,
+          copiedSource: false,
+          copiedArchiveId: null,
+          scheduleMode: safeReadJson(STORAGE_KEYS.SCHEDULE_MODE, 'interval'),
+          intervalSeconds: initialInterval,
+          isTimerRunning: true,
+          secondsRemaining: initialInterval,
+          scheduledTimes: safeReadJson(STORAGE_KEYS.SCHEDULED_TIMES, DEFAULT_SCHEDULED_TIMES),
+          soundEnabled: Boolean(safeReadJson(STORAGE_KEYS.SOUND_ENABLED, false)),
+          notificationsEnabled: false,
+          arrivalNotice: null,
+          deliveryLog: safeReadJson(STORAGE_KEYS.DELIVERY_LOG, []),
+
+          // Inputs & UI sub-states
+          deskAuthorQuery: '',
+          deskCustomValue: '3',
+          deskCustomUnit: 'min',
+          deskNewTime: '09:00',
+
+          dirScope: 'all',
+          dirQuery: '',
+          dirExpandedAuthorId: AUTHORS[0].id,
+          dirShowAddForm: false,
+
+          studioTimeInput: '18:00',
+          studioLabelInput: '저녁 사유',
+          studioCustomVal: '10',
+          studioCustomUnit: 'min',
+
+          archiveScope: 'all',
+
+          history: [initialPassage.id],
+          historyIndex: 0
+        };
+
+        var seenInPool = new Set([initialPassage.id]);
+        var lastTriggeredMinute = '';
+
+        function applyTheme() {
+          if (state.isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        }
+        applyTheme();
+
+        // =========================================================================
+        // 5. Derived Selectors
+        // =========================================================================
+        function getAllPassages() {
+          return state.customPassages.concat(PASSAGES);
+        }
+
+        function getAllAuthors() {
+          var map = new Map();
+          AUTHORS.forEach(function (a) { map.set(a.id, a); });
+          state.customPassages.forEach(function (p) {
+            if (!map.has(p.authorId)) {
+              map.set(p.authorId, {
+                id: p.authorId,
+                name: p.author,
+                originalName: p.authorOriginal || '',
+                era: p.era || '사용자 서가',
+                category: p.category,
+                bio: '사용자가 직접 등록한 책과 문장입니다.'
+              });
+            }
+          });
+          return Array.from(map.values());
+        }
+
+        function getPassageCountsByAuthor() {
+          var counts = {};
+          getAllPassages().forEach(function (p) {
+            counts[p.authorId] = (counts[p.authorId] || 0) + 1;
+          });
+          return counts;
+        }
+
+        function getActivePool() {
+          var all = getAllPassages();
+          if (state.selectedAuthorId) {
+            var byAuthor = all.filter(function (p) { return p.authorId === state.selectedAuthorId; });
+            if (byAuthor.length > 0) return byAuthor;
+          }
+          if (state.filterScope === 'all') return all;
+          return all.filter(function (p) { return p.category === state.filterScope; });
+        }
+
+        function getCurrentPassage() {
+          var all = getAllPassages();
+          var id = state.history[state.historyIndex];
+          return all.find(function (p) { return p.id === id; }) || all[0];
+        }
+
+        function getNextScheduledInfo() {
+          var enabled = state.scheduledTimes.filter(function (e) { return e.enabled; });
+          if (enabled.length === 0) return null;
+          var now = new Date();
+          var nowSec = now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+          var best = null;
+          enabled.forEach(function (entry) {
+            var parts = entry.time.split(':');
+            var hh = parseInt(parts[0], 10);
+            var mm = parseInt(parts[1], 10);
+            if (isNaN(hh) || isNaN(mm)) return;
+            var target = hh * 3600 + mm * 60;
+            var diff = target - nowSec;
+            if (diff <= 0) diff += 86400;
+            if (!best || diff < best.secondsUntil) {
+              best = { time: entry.time, secondsUntil: diff, entry: entry };
+            }
+          });
+          return best;
+        }
+
+        // =========================================================================
+        // 6. Core Actions
+        // =========================================================================
+        function appendLog(passage, triggerType) {
+          var item = {
+            id: Date.now() + '-' + Math.random().toString(36).slice(2, 7),
+            passageId: passage.id,
+            author: passage.author,
+            work: passage.work,
+            text: passage.text,
+            triggeredAt: new Date().toISOString(),
+            triggerType: triggerType
+          };
+          state.deliveryLog = [item].concat(state.deliveryLog).slice(0, 50);
+          safeWriteJson(STORAGE_KEYS.DELIVERY_LOG, state.deliveryLog);
+        }
+
+        function pickRandomFromPool(pool, excludeId) {
+          var all = getAllPassages();
+          if (pool.length === 0) return all[0];
+          if (pool.length === 1) return pool[0];
+          var candidates = pool.filter(function (p) {
+            return p.id !== excludeId && !seenInPool.has(p.id);
+          });
+          if (candidates.length === 0) {
+            seenInPool.clear();
+            candidates = pool.filter(function (p) { return p.id !== excludeId; });
+            if (candidates.length === 0) candidates = pool;
+          }
+          var chosen = candidates[Math.floor(Math.random() * candidates.length)];
+          seenInPool.add(chosen.id);
+          return chosen;
+        }
+
+        function drawNextPassage(triggerType, customPool, noticeMessage) {
+          var pool = customPool || getActivePool();
+          var current = getCurrentPassage();
+          var chosen = pickRandomFromPool(pool, current ? current.id : null);
+
+          var sliced = state.history.slice(0, state.historyIndex + 1);
+          sliced.push(chosen.id);
+          if (sliced.length > 60) sliced = sliced.slice(sliced.length - 60);
+          state.history = sliced;
+          state.historyIndex = sliced.length - 1;
+          state.copiedDesk = false;
+
+          appendLog(chosen, triggerType || 'manual');
+
+          if (triggerType === 'interval' || state.scheduleMode === 'interval') {
+            state.secondsRemaining = state.intervalSeconds;
+          }
+
+          if (noticeMessage) {
+            state.arrivalNotice = noticeMessage;
+          }
+
+          if (triggerType && triggerType !== 'manual') {
+            if (state.soundEnabled) {
+              playGentleChime();
+            }
+            if (
+              state.notificationsEnabled &&
+              typeof Notification !== 'undefined' &&
+              Notification.permission === 'granted'
+            ) {
+              try {
+                new Notification(chosen.author + ' · 《' + chosen.work + '》', {
+                  body: chosen.text
+                });
+              } catch (e) {
+                // ignore
+              }
+            }
+          }
+
+          render();
+        }
+
+        function openSpecificPassage(passageId) {
+          var all = getAllPassages();
+          var exists = all.find(function (p) { return p.id === passageId; });
+          if (!exists) return;
+          var sliced = state.history.slice(0, state.historyIndex + 1);
+          sliced.push(exists.id);
+          if (sliced.length > 60) sliced = sliced.slice(sliced.length - 60);
+          state.history = sliced;
+          state.historyIndex = sliced.length - 1;
+          state.copiedDesk = false;
+          state.activeView = 'desk';
+          render();
+        }
+
+        function selectAuthor(authorId) {
+          state.selectedAuthorId = authorId;
+          seenInPool.clear();
+          var all = getAllPassages();
+          if (authorId) {
+            var pool = all.filter(function (p) { return p.authorId === authorId; });
+            if (pool.length > 0) {
+              drawNextPassage('manual', pool);
+              return;
+            }
+          }
+          var scopePool = state.filterScope === 'all'
+            ? all
+            : all.filter(function (p) { return p.category === state.filterScope; });
+          drawNextPassage('manual', scopePool);
+        }
+
+        function changeFilterScope(nextScope) {
+          state.filterScope = nextScope;
+          var all = getAllPassages();
+          var authors = getAllAuthors();
+          if (state.selectedAuthorId) {
+            var auth = authors.find(function (a) { return a.id === state.selectedAuthorId; });
+            if (auth && nextScope !== 'all' && auth.category !== nextScope) {
+              state.selectedAuthorId = null;
+              drawNextPassage('manual', all.filter(function (p) { return p.category === nextScope; }));
+              return;
+            }
+          } else {
+            var cur = getCurrentPassage();
+            if (nextScope !== 'all' && cur && cur.category !== nextScope) {
+              drawNextPassage('manual', all.filter(function (p) { return p.category === nextScope; }));
+              return;
+            }
+          }
+          render();
+        }
+
+        function toggleSave(id) {
+          var idx = state.savedIds.indexOf(id);
+          if (idx >= 0) {
+            state.savedIds = state.savedIds.filter(function (item) { return item !== id; });
+          } else {
+            state.savedIds = [id].concat(state.savedIds);
+          }
+          safeWriteJson(STORAGE_KEYS.SAVED_IDS, state.savedIds);
+          render();
+        }
+
+        function setIntervalSeconds(sec) {
+          var clamped = Math.max(5, Math.min(86400, sec));
+          state.intervalSeconds = clamped;
+          state.secondsRemaining = clamped;
+          state.isTimerRunning = true;
+          safeWriteJson(STORAGE_KEYS.INTERVAL_SEC, clamped);
+          render();
+        }
+
+        function addScheduledTime(timeStr, labelStr) {
+          if (!timeStr) return;
+          var exists = state.scheduledTimes.some(function (t) { return t.time === timeStr; });
+          if (exists) {
+            state.arrivalNotice = timeStr + ' 시각은 이미 목록에 등록되어 있습니다.';
+            render();
+            return;
+          }
+          var next = state.scheduledTimes.concat([{
+            id: Date.now() + '-' + Math.random().toString(36).slice(2, 6),
+            time: timeStr,
+            enabled: true,
+            label: labelStr || '정시 발췌'
+          }]).sort(function (a, b) { return a.time.localeCompare(b.time); });
+          state.scheduledTimes = next;
+          safeWriteJson(STORAGE_KEYS.SCHEDULED_TIMES, next);
+          render();
+        }
+
+        function toggleScheduledTime(id) {
+          state.scheduledTimes = state.scheduledTimes.map(function (item) {
+            return item.id === id ? Object.assign({}, item, { enabled: !item.enabled }) : item;
+          });
+          safeWriteJson(STORAGE_KEYS.SCHEDULED_TIMES, state.scheduledTimes);
+          render();
+        }
+
+        function removeScheduledTime(id) {
+          state.scheduledTimes = state.scheduledTimes.filter(function (item) { return item.id !== id; });
+          safeWriteJson(STORAGE_KEYS.SCHEDULED_TIMES, state.scheduledTimes);
+          render();
+        }
+
+        function toggleNotifications() {
+          if (state.notificationsEnabled) {
+            state.notificationsEnabled = false;
+            render();
+            return;
+          }
+          if (typeof Notification === 'undefined' || window.location.protocol === 'file:') {
+            state.arrivalNotice = '로컬 파일(file://) 또는 미지원 환경에서는 브라우저 알림 대신 화면 내 알림과 종소리로 안내합니다.';
+            render();
+            return;
+          }
+          if (Notification.permission === 'granted') {
+            state.notificationsEnabled = true;
+            render();
+            return;
+          }
+          if (Notification.permission === 'denied') {
+            state.arrivalNotice = '브라우저 설정에서 알림 권한이 차단되어 있어 켤 수 없습니다.';
+            render();
+            return;
+          }
+          try {
+            Notification.requestPermission().then(function (result) {
+              if (result === 'granted') {
+                state.notificationsEnabled = true;
+                state.arrivalNotice = '브라우저 알림이 활성화되었습니다.';
+              } else {
+                state.arrivalNotice = '알림 권한이 허용되지 않았습니다.';
+              }
+              render();
+            });
+          } catch (e) {
+            state.arrivalNotice = '알림 권한 요청을 완료할 수 없습니다.';
+            render();
+          }
+        }
+
+        // =========================================================================
+        // 7. Rendering Templates
+        // =========================================================================
+        function renderHeader() {
+          var savedCount = state.savedIds.filter(function (id) {
+            return getAllPassages().some(function (p) { return p.id === id; });
+          }).length;
+
+          var navItems = [
+            { id: 'desk', label: '오늘의 발췌' },
+            { id: 'authors', label: '작가별 색인' },
+            { id: 'schedule', label: '시간 예약' },
+            { id: 'archive', label: '보관함' + (savedCount > 0 ? ' (' + savedCount + ')' : '') }
+          ];
+
+          var navButtons = navItems.map(function (item) {
+            var activeCls = state.activeView === item.id ? ' is-active' : '';
+            return '<button type="button" class="nav-btn' + activeCls + '" data-action="nav" data-view="' + item.id + '">' + escapeHtml(item.label) + '</button>';
+          }).join('');
+
+          return (
+            '<header class="site-header">' +
+              '<div class="container header-inner">' +
+                '<button type="button" class="brand-btn" data-action="nav" data-view="desk">사유의 서가</button>' +
+                '<nav class="main-nav" aria-label="주요 메뉴">' + navButtons + '</nav>' +
+                '<button type="button" class="btn-primary" data-action="top-draw">' +
+                  iconSvg('shuffle', 15) +
+                  '<span>문장 발췌</span>' +
+                '</button>' +
+              '</div>' +
+              '<nav class="mobile-nav" aria-label="모바일 메뉴">' + navButtons + '</nav>' +
+            '</header>'
+          );
+        }
+
+        function renderDeskView(animatePassage) {
+          var allAuthors = getAllAuthors();
+          var counts = getPassageCountsByAuthor();
+          var activePool = getActivePool();
+          var current = getCurrentPassage();
+          var isSaved = state.savedIds.indexOf(current.id) >= 0;
+
+          var selectedAuthor = state.selectedAuthorId
+            ? allAuthors.find(function (a) { return a.id === state.selectedAuthorId; })
+            : null;
+
+          var scopeLabel = selectedAuthor
+            ? selectedAuthor.name
+            : state.filterScope === 'philosopher'
+            ? '모든 철학자 무작위'
+            : state.filterScope === 'novelist'
+            ? '모든 소설가 무작위'
+            : '전체 작가 무작위';
+
+          var resetBtnHtml = (state.selectedAuthorId !== null || state.filterScope !== 'all')
+            ? '<span aria-hidden="true">·</span><button type="button" class="accent-link" data-action="reset-scope">전체 초기화</button>'
+            : '';
+
+          var noticeHtml = state.arrivalNotice
+            ? '<div class="notice-bar"><span>' + escapeHtml(state.arrivalNotice) + '</span><button type="button" class="text-link-btn" data-action="dismiss-notice">닫기</button></div>'
+            : '';
+
+          var citationOrig = current.authorOriginal
+            ? ' <span style="color: var(--ink-faint);">(' + escapeHtml(current.authorOriginal) + (current.era ? ', ' + escapeHtml(current.era) : '') + ')</span>'
+            : '';
+
+          var contextHtml = state.showContext && current.context
+            ? '<p class="passage-context">' + escapeHtml(current.context) + '</p>'
+            : '';
+
+          // Timer panel HTML
+          var timerPanelHtml = '';
+          if (state.scheduleMode === 'interval') {
+            var pct = state.intervalSeconds > 0
+              ? Math.min(100, Math.max(0, ((state.intervalSeconds - state.secondsRemaining) / state.intervalSeconds) * 100))
+              : 0;
+            var presets = [
+              { label: '10초', sec: 10 },
+              { label: '30초', sec: 30 },
+              { label: '1분', sec: 60 },
+              { label: '5분', sec: 300 },
+              { label: '15분', sec: 900 },
+              { label: '1시간', sec: 3600 }
+            ];
+            var presetBtns = presets.map(function (p) {
+              var cls = state.intervalSeconds === p.sec ? ' is-active' : '';
+              return '<button type="button" class="preset-btn' + cls + '" data-action="set-interval" data-sec="' + p.sec + '">' + p.label + '</button>';
+            }).join('');
+
+            timerPanelHtml =
+              '<div class="timer-row">' +
+                '<div>' +
+                  '<div style="font-size:0.75rem;color:var(--ink-muted);">' + escapeHtml(formatIntervalLabel(state.intervalSeconds)) + ' 전환</div>' +
+                  '<div id="desk-countdown" class="font-mono-tabular countdown-val">' + formatDurationSeconds(state.secondsRemaining) + '</div>' +
+                '</div>' +
+                '<button type="button" class="' + (state.isTimerRunning ? 'btn-primary btn-sm' : 'btn-outline btn-sm') + '" data-action="toggle-timer">' +
+                  iconSvg(state.isTimerRunning ? 'pause' : 'play', 14) +
+                  '<span>' + (state.isTimerRunning ? '실행 중' : '일시정지') + '</span>' +
+                '</button>' +
+              '</div>' +
+              '<div class="progress-track"><div id="desk-progress" class="progress-fill" style="width:' + pct + '%"></div></div>' +
+              '<div class="preset-grid">' + presetBtns + '</div>' +
+              '<form class="inline-form" data-form="desk-custom-interval">' +
+                '<input type="number" min="5" max="1440" class="field field-xs font-mono-tabular" style="width:66px;" value="' + escapeHtml(state.deskCustomValue) + '" data-bind="deskCustomValue" aria-label="직접 시간 입력" />' +
+                '<select class="field field-xs" data-bind="deskCustomUnit" aria-label="시간 단위">' +
+                  '<option value="sec"' + (state.deskCustomUnit === 'sec' ? ' selected' : '') + '>초</option>' +
+                  '<option value="min"' + (state.deskCustomUnit === 'min' ? ' selected' : '') + '>분</option>' +
+                '</select>' +
+                '<button type="submit" class="btn-outline btn-sm" style="flex:1;">간격 적용</button>' +
+              '</form>';
+          } else {
+            var nextInfo = getNextScheduledInfo();
+            var timeRows = state.scheduledTimes.length === 0
+              ? '<p style="font-size:0.75rem;color:var(--ink-faint);margin:8px 0;">아래에서 원하는 시각을 추가해 주세요.</p>'
+              : state.scheduledTimes.map(function (entry) {
+                  return (
+                    '<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--border-soft);font-size:0.78rem;">' +
+                      '<button type="button" data-action="toggle-sched" data-id="' + escapeHtml(entry.id) + '" style="display:flex;align-items:center;gap:8px;">' +
+                        '<span class="font-mono-tabular' + (entry.enabled ? '' : ' line-through') + '" style="font-weight:500;color:' + (entry.enabled ? 'var(--ink-primary)' : 'var(--ink-faint)') + ';">' + escapeHtml(entry.time) + '</span>' +
+                        '<span style="color:var(--ink-muted);">' + (entry.enabled ? '켜짐' : '꺼짐') + '</span>' +
+                      '</button>' +
+                      '<button type="button" class="danger-btn" data-action="remove-sched" data-id="' + escapeHtml(entry.id) + '" aria-label="' + escapeHtml(entry.time) + ' 삭제">' +
+                        iconSvg('trash', 14) +
+                      '</button>' +
+                    '</div>'
+                  );
+                }).join('');
+
+            timerPanelHtml =
+              '<div style="margin-top:12px;margin-bottom:10px;">' +
+                '<div style="font-size:0.75rem;color:var(--ink-muted);">' + (nextInfo ? '다음 예정 시각 ' + escapeHtml(nextInfo.time) : '활성화된 예약 시각 없음') + '</div>' +
+                '<div id="desk-sched-countdown" class="font-mono-tabular countdown-val" style="font-size:1.35rem;">' + (nextInfo ? formatDurationSeconds(nextInfo.secondsUntil) : '--:--:--') + '</div>' +
+              '</div>' +
+              '<div style="max-height:144px;overflow-y:auto;margin-bottom:12px;padding-right:4px;">' + timeRows + '</div>' +
+              '<form class="inline-form" data-form="desk-add-time">' +
+                '<input type="time" class="field field-xs font-mono-tabular" style="flex:1;" value="' + escapeHtml(state.deskNewTime) + '" data-bind="deskNewTime" aria-label="예약 시각 선택" />' +
+                '<button type="submit" class="btn-outline btn-sm">' + iconSvg('plus', 14) + '<span>추가</span></button>' +
+              '</form>';
+          }
+
+          // Filtered authors for rail
+          var q = state.deskAuthorQuery.trim().toLowerCase();
+          var filteredAuthors = allAuthors.filter(function (a) {
+            var matchScope = state.filterScope === 'all' || a.category === state.filterScope;
+            var matchQ = !q || a.name.toLowerCase().indexOf(q) >= 0 || (a.originalName && a.originalName.toLowerCase().indexOf(q) >= 0);
+            return matchScope && matchQ;
+          });
+
+          var authorRailItems = filteredAuthors.length === 0
+            ? '<p style="padding:16px 0;text-align:center;font-size:0.75rem;color:var(--ink-faint);">검색 결과가 없습니다.</p>'
+            : filteredAuthors.map(function (a) {
+                var selected = state.selectedAuthorId === a.id;
+                var cnt = counts[a.id] || 0;
+                return (
+                  '<button type="button" class="author-rail-item' + (selected ? ' is-selected' : '') + '" data-action="select-author" data-id="' + escapeHtml(a.id) + '">' +
+                    '<span class="truncate">' + escapeHtml(a.name) + ' <span style="font-weight:400;color:var(--ink-faint);">· ' + (a.category === 'philosopher' ? '철학' : '소설') + '</span></span>' +
+                    '<span class="font-mono-tabular" style="color:var(--ink-muted);flex-shrink:0;">' + cnt + '</span>' +
+                  '</button>'
+                );
+              }).join('');
+
+          var allRandomText = state.filterScope === 'philosopher'
+            ? '모든 철학자 무작위'
+            : state.filterScope === 'novelist'
+            ? '모든 소설가 무작위'
+            : '전체 인물 무작위';
+
+          return (
+            '<section class="container page-section">' +
+              '<div class="desk-grid">' +
+                '<div>' +
+                  '<div class="utility-strip">' +
+                    '<div class="utility-left">' +
+                      '<span>발췌 범위:</span>' +
+                      '<span style="font-weight:500;color:var(--ink-primary);">' + escapeHtml(scopeLabel) + '</span>' +
+                      '<span aria-hidden="true">·</span>' +
+                      '<span class="font-mono-tabular">' + activePool.length + '문장</span>' +
+                      resetBtnHtml +
+                    '</div>' +
+                    '<div class="utility-right">' +
+                      '<button type="button" class="text-link-btn" data-action="toggle-context">' + (state.showContext ? '해설 접기' : '해설 보기') + '</button>' +
+                      '<span aria-hidden="true" style="color:var(--border-hairline);">|</span>' +
+                      '<button type="button" class="text-link-btn" data-action="toggle-dark">' +
+                        iconSvg(state.isDark ? 'sun' : 'moon', 14) +
+                        '<span>' + (state.isDark ? '밝은 종이' : '밤의 서재') + '</span>' +
+                      '</button>' +
+                      '<span aria-hidden="true" style="color:var(--border-hairline);">|</span>' +
+                      '<button type="button" class="text-link-btn" data-action="download-html" style="color:var(--accent-primary);font-weight:500;">' +
+                        iconSvg('download', 14) +
+                        '<span>index.html 저장</span>' +
+                      '</button>' +
+                    '</div>' +
+                  '</div>' +
+                  noticeHtml +
+                  '<article class="reading-stage">' +
+                    '<div class="' + (animatePassage ? 'passage-enter' : '') + '">' +
+                      '<div class="passage-kicker">' +
+                        '<span>' + (current.category === 'philosopher' ? '철학자' : '소설가') + '</span>' +
+                        '<span aria-hidden="true">·</span>' +
+                        '<span>' + escapeHtml(current.author) + '</span>' +
+                        '<span aria-hidden="true">·</span>' +
+                        '<span style="color:var(--ink-primary);">《' + escapeHtml(current.work) + '》</span>' +
+                      '</div>' +
+                      '<blockquote class="passage-quote">“' + escapeHtml(current.text) + '”</blockquote>' +
+                      '<div class="passage-citation">' +
+                        '<span style="font-weight:500;color:var(--ink-primary);">' + escapeHtml(current.author) + '</span>' +
+                        citationOrig +
+                        '<span aria-hidden="true">·</span>' +
+                        '<span>' + escapeHtml(current.workType) + '</span>' +
+                      '</div>' +
+                      contextHtml +
+                    '</div>' +
+                  '</article>' +
+                  '<div class="stage-actions">' +
+                    '<div class="action-group">' +
+                      '<button type="button" class="btn-outline" data-action="prev-passage"' + (state.historyIndex <= 0 ? ' disabled' : '') + '>' +
+                        iconSvg('arrow-left', 15) +
+                        '<span>이전 문장</span>' +
+                      '</button>' +
+                      '<button type="button" class="btn-primary" data-action="next-passage">' +
+                        iconSvg('shuffle', 15) +
+                        '<span>다음 문장 발췌</span>' +
+                      '</button>' +
+                    '</div>' +
+                    '<div class="action-group">' +
+                      '<button type="button" class="btn-outline" data-action="copy-desk">' +
+                        iconSvg(state.copiedDesk ? 'check' : 'copy', 15) +
+                        '<span style="' + (state.copiedDesk ? 'color:var(--accent-primary);' : '') + '">' + (state.copiedDesk ? '복사됨' : '문장 복사') + '</span>' +
+                      '</button>' +
+                      '<button type="button" class="btn-outline' + (isSaved ? ' is-active' : '') + '" data-action="toggle-save" data-id="' + escapeHtml(current.id) + '">' +
+                        iconSvg(isSaved ? 'bookmark-fill' : 'bookmark', 15) +
+                        '<span>' + (isSaved ? '보관됨' : '보관하기') + '</span>' +
+                      '</button>' +
+                    '</div>' +
+                  '</div>' +
+                '</div>' +
+
+                '<aside class="control-rail">' +
+                  '<div>' +
+                    '<div class="rail-header">' +
+                      '<h2 class="rail-title">자동 발췌 시간 설정</h2>' +
+                      '<span style="color:var(--ink-faint);">' + iconSvg('clock', 16) + '</span>' +
+                    '</div>' +
+                    '<div class="segmented cols-2">' +
+                      '<button type="button" class="seg-btn' + (state.scheduleMode === 'interval' ? ' is-active' : '') + '" data-action="set-sched-mode" data-mode="interval">주기 간격</button>' +
+                      '<button type="button" class="seg-btn' + (state.scheduleMode === 'scheduled_times' ? ' is-active' : '') + '" data-action="set-sched-mode" data-mode="scheduled_times">지정 시각</button>' +
+                    '</div>' +
+                    timerPanelHtml +
+                    '<div class="rail-sub-row">' +
+                      '<button type="button" class="toggle-link' + (state.soundEnabled ? ' is-on' : '') + '" data-action="toggle-sound">' +
+                        iconSvg(state.soundEnabled ? 'volume' : 'volume-x', 14) +
+                        '<span>' + (state.soundEnabled ? '알림음 켜짐' : '알림음 꺼짐') + '</span>' +
+                      '</button>' +
+                      '<button type="button" class="toggle-link' + (state.notificationsEnabled ? ' is-on' : '') + '" data-action="toggle-notif">' +
+                        iconSvg(state.notificationsEnabled ? 'bell' : 'bell-off', 14) +
+                        '<span>' + (state.notificationsEnabled ? '브라우저 알림 켜짐' : '브라우저 알림 꺼짐') + '</span>' +
+                      '</button>' +
+                    '</div>' +
+                  '</div>' +
+
+                  '<div class="rail-divider">' +
+                    '<div class="rail-header">' +
+                      '<h2 class="rail-title">인물 · 갈래 선택</h2>' +
+                      '<span style="font-size:0.75rem;color:var(--ink-muted);">선택 시 해당 인물만 무작위</span>' +
+                    '</div>' +
+                    '<div class="segmented cols-3">' +
+                      '<button type="button" class="seg-btn' + (state.filterScope === 'all' ? ' is-active' : '') + '" data-action="set-scope" data-scope="all">전체</button>' +
+                      '<button type="button" class="seg-btn' + (state.filterScope === 'philosopher' ? ' is-active' : '') + '" data-action="set-scope" data-scope="philosopher">철학자</button>' +
+                      '<button type="button" class="seg-btn' + (state.filterScope === 'novelist' ? ' is-active' : '') + '" data-action="set-scope" data-scope="novelist">소설가</button>' +
+                    '</div>' +
+                    '<input type="text" id="desk-author-search" class="field field-xs" style="width:100%;margin-top:10px;" placeholder="철학자 · 소설가 이름 검색" value="' + escapeHtml(state.deskAuthorQuery) + '" data-bind="deskAuthorQuery" aria-label="철학자 또는 소설가 검색" />' +
+                    '<button type="button" class="all-random-btn' + (state.selectedAuthorId === null ? ' is-active' : '') + '" data-action="select-author" data-id="">' +
+                      '<span>' + allRandomText + '</span>' +
+                      '<span class="font-mono-tabular" style="opacity:0.85;">전체</span>' +
+                    '</button>' +
+                    '<div class="author-scroll">' + authorRailItems + '</div>' +
+                  '</div>' +
+                '</aside>' +
+              '</div>' +
+            '</section>'
+          );
+        }
+
+        function renderAuthorsView() {
+          var allAuthors = getAllAuthors();
+          var allPassages = getAllPassages();
+          var q = state.dirQuery.trim().toLowerCase();
+
+          var filtered = allAuthors.filter(function (a) {
+            var matchScope = state.dirScope === 'all' || a.category === state.dirScope;
+            if (!q) return matchScope;
+            var authored = allPassages.filter(function (p) { return p.authorId === a.id; });
+            var matchQ =
+              a.name.toLowerCase().indexOf(q) >= 0 ||
+              (a.originalName && a.originalName.toLowerCase().indexOf(q) >= 0) ||
+              authored.some(function (p) {
+                return p.work.toLowerCase().indexOf(q) >= 0 || p.text.toLowerCase().indexOf(q) >= 0;
+              });
+            return matchScope && matchQ;
+          });
+
+          var activeAuthor = allAuthors.find(function (a) { return a.id === state.dirExpandedAuthorId; }) || filtered[0] || null;
+          var activePassages = activeAuthor
+            ? allPassages.filter(function (p) { return p.authorId === activeAuthor.id; })
+            : [];
+
+          var addFormHtml = state.dirShowAddForm
+            ? '<form class="custom-form" data-form="add-custom-passage">' +
+                '<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-bottom:14px;">' +
+                  '<h2 class="rail-title">내가 읽은 책 속 문장 등록하기</h2>' +
+                  '<span style="font-size:0.75rem;color:var(--ink-muted);">등록된 문장은 자동 발췌 풀에 포함됩니다</span>' +
+                '</div>' +
+                '<div class="form-grid-4">' +
+                  '<div><label class="form-label">인물 이름 *</label><input type="text" required name="author" class="field" style="width:100%;" placeholder="예: 에밀 시오랑" /></div>' +
+                  '<div><label class="form-label">원어 이름 (선택)</label><input type="text" name="authorOriginal" class="field" style="width:100%;" placeholder="예: Emil Cioran" /></div>' +
+                  '<div><label class="form-label">책 제목 *</label><input type="text" required name="work" class="field" style="width:100%;" placeholder="예: 해체의 교본" /></div>' +
+                  '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">' +
+                    '<div><label class="form-label">갈래</label><select name="category" class="field" style="width:100%;"><option value="philosopher">철학자</option><option value="novelist">소설가</option></select></div>' +
+                    '<div><label class="form-label">형식</label><select name="workType" class="field" style="width:100%;"><option value="저서 발췌">저서 발췌</option><option value="소설 발췌">소설 발췌</option><option value="잠언 · 단상">잠언 · 단상</option><option value="수필 · 서한">수필 · 서한</option></select></div>' +
+                  '</div>' +
+                '</div>' +
+                '<div style="margin-top:12px;">' +
+                  '<label class="form-label">발췌할 문장 *</label>' +
+                  '<textarea required rows="2" name="text" class="field" style="width:100%;" placeholder="책에서 인상 깊었던 한 문장을 그대로 옮겨 적어주세요."></textarea>' +
+                '</div>' +
+                '<div style="margin-top:12px;display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px;">' +
+                  '<div style="flex:1;min-width:220px;"><label class="form-label">짧은 메모 또는 맥락 (선택)</label><input type="text" name="context" class="field" style="width:100%;" placeholder="어느 장에서 읽었는지 혹은 남기고 싶은 단상" /></div>' +
+                  '<button type="submit" class="btn-primary">서가에 추가하기</button>' +
+                '</div>' +
+              '</form>'
+            : '';
+
+          var listHtml = filtered.length === 0
+            ? '<div style="padding:40px 0;text-align:center;font-size:0.875rem;color:var(--ink-muted);">일치하는 작가나 작품이 없습니다.</div>'
+            : filtered.map(function (a) {
+                var cnt = allPassages.filter(function (p) { return p.authorId === a.id; }).length;
+                var inspecting = activeAuthor && activeAuthor.id === a.id;
+                var locked = state.selectedAuthorId === a.id;
+                return (
+                  '<button type="button" class="author-row-btn' + (inspecting ? ' is-inspecting' : '') + '" data-action="inspect-author" data-id="' + escapeHtml(a.id) + '">' +
+                    '<div style="min-width:0;">' +
+                      '<div style="display:flex;align-items:center;gap:6px;">' +
+                        '<span class="truncate" style="font-weight:500;color:var(--ink-primary);">' + escapeHtml(a.name) + '</span>' +
+                        (locked ? '<span style="font-size:0.75rem;color:var(--accent-primary);font-weight:500;flex-shrink:0;">· 발췌 중</span>' : '') +
+                      '</div>' +
+                      '<div class="truncate" style="margin-top:4px;font-size:0.75rem;color:var(--ink-muted);">' +
+                        (a.category === 'philosopher' ? '철학자' : '소설가') +
+                        (a.originalName ? ' · ' + escapeHtml(a.originalName) : '') +
+                        (a.era ? ' · ' + escapeHtml(a.era) : '') +
+                      '</div>' +
+                    '</div>' +
+                    '<div style="display:flex;align-items:center;gap:8px;flex-shrink:0;font-size:0.75rem;color:var(--ink-muted);">' +
+                      '<span class="font-mono-tabular">' + cnt + '문장</span>' +
+                      iconSvg('chevron-right', 15) +
+                    '</div>' +
+                  '</button>'
+                );
+              }).join('');
+
+          var detailHtml = activeAuthor
+            ? '<div class="panel-card">' +
+                '<div style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:16px;padding-bottom:20px;border-bottom:1px solid var(--border-hairline);">' +
+                  '<div>' +
+                    '<div style="font-size:0.75rem;color:var(--ink-muted);">' +
+                      (activeAuthor.category === 'philosopher' ? '철학자' : '소설가') +
+                      (activeAuthor.originalName ? ' · ' + escapeHtml(activeAuthor.originalName) : '') +
+                      (activeAuthor.era ? ' · ' + escapeHtml(activeAuthor.era) : '') +
+                    '</div>' +
+                    '<h2 class="font-editorial" style="margin:6px 0 0;font-size:1.75rem;font-weight:600;color:var(--ink-primary);">' + escapeHtml(activeAuthor.name) + '</h2>' +
+                    '<p style="margin:8px 0 0;font-size:0.875rem;color:var(--ink-secondary);line-height:1.6;">' + escapeHtml(activeAuthor.bio) + '</p>' +
+                  '</div>' +
+                  '<button type="button" class="btn-primary" data-action="lock-author-read" data-id="' + escapeHtml(activeAuthor.id) + '">' +
+                    iconSvg('shuffle', 14) +
+                    '<span>이 작가만 무작위 발췌</span>' +
+                  '</button>' +
+                '</div>' +
+                '<div>' +
+                  activePassages.map(function (p, i) {
+                    return (
+                      '<div class="passage-list-item">' +
+                        '<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:0.75rem;color:var(--ink-muted);margin-bottom:8px;">' +
+                          '<span><span class="font-mono-tabular" style="margin-right:8px;">' + String(i + 1).padStart(2, '0') + '.</span>《' + escapeHtml(p.work) + '》 · ' + escapeHtml(p.workType) + '</span>' +
+                          '<div style="display:flex;align-items:center;gap:12px;flex-shrink:0;">' +
+                            '<button type="button" class="accent-link" style="display:inline-flex;align-items:center;gap:4px;" data-action="open-passage" data-id="' + escapeHtml(p.id) + '">' + iconSvg('book', 13) + '<span>읽기</span></button>' +
+                            (p.isCustom ? '<button type="button" class="danger-btn" data-action="delete-custom" data-id="' + escapeHtml(p.id) + '" aria-label="문장 삭제">' + iconSvg('trash', 13) + '</button>' : '') +
+                          '</div>' +
+                        '</div>' +
+                        '<p class="font-editorial" style="margin:0;font-size:1.18rem;line-height:1.65;color:var(--ink-primary);">“' + escapeHtml(p.text) + '”</p>' +
+                        (p.context ? '<p style="margin:8px 0 0;font-size:0.78rem;color:var(--ink-muted);line-height:1.55;">' + escapeHtml(p.context) + '</p>' : '') +
+                      '</div>'
+                    );
+                  }).join('') +
+                '</div>' +
+              '</div>'
+            : '';
+
+          return (
+            '<section class="container page-section">' +
+              '<div class="page-header">' +
+                '<div>' +
+                  '<h1 class="page-title">작가별 색인</h1>' +
+                  '<p class="page-subtitle">특정 철학자나 소설가를 고르면 해당 인물의 문장들만 무작위로 발췌됩니다.</p>' +
+                '</div>' +
+                '<button type="button" class="btn-outline" data-action="toggle-add-form">' +
+                  iconSvg('plus', 15) +
+                  '<span>' + (state.dirShowAddForm ? '입력 닫기' : '내 책 문장 추가') + '</span>' +
+                '</button>' +
+              '</div>' +
+              addFormHtml +
+              '<div class="catalog-toolbar">' +
+                '<div class="segmented-inline">' +
+                  '<button type="button" class="seg-btn' + (state.dirScope === 'all' ? ' is-active' : '') + '" data-action="set-dir-scope" data-scope="all">전체 인물</button>' +
+                  '<button type="button" class="seg-btn' + (state.dirScope === 'philosopher' ? ' is-active' : '') + '" data-action="set-dir-scope" data-scope="philosopher">철학자</button>' +
+                  '<button type="button" class="seg-btn' + (state.dirScope === 'novelist' ? ' is-active' : '') + '" data-action="set-dir-scope" data-scope="novelist">소설가</button>' +
+                '</div>' +
+                '<input type="text" id="dir-search-input" class="field" style="width:280px;max-width:100%;" placeholder="작가 이름, 책 제목, 문장 검색" value="' + escapeHtml(state.dirQuery) + '" data-bind="dirQuery" aria-label="작가 및 책 검색" />' +
+              '</div>' +
+              '<div class="catalog-grid">' +
+                '<div class="author-list-box">' + listHtml + '</div>' +
+                '<div>' + detailHtml + '</div>' +
+              '</div>' +
+            '</section>'
+          );
+        }
+
+        function renderScheduleView() {
+          var nextInfo = getNextScheduledInfo();
+          var presets = [
+            { label: '10초', sec: 10 },
+            { label: '30초', sec: 30 },
+            { label: '1분', sec: 60 },
+            { label: '5분', sec: 300 },
+            { label: '15분', sec: 900 },
+            { label: '1시간', sec: 3600 }
+          ];
+
+          var presetBtns = presets.map(function (p) {
+            return '<button type="button" class="preset-btn' + (state.intervalSeconds === p.sec ? ' is-active' : '') + '" data-action="studio-set-interval" data-sec="' + p.sec + '">' + p.label + '</button>';
+          }).join('');
+
+          var schedRows = state.scheduledTimes.length === 0
+            ? '<p style="padding:24px 0;text-align:center;font-size:0.875rem;color:var(--ink-muted);">등록된 시각이 없습니다. 아래에서 새 시각을 추가해 주세요.</p>'
+            : state.scheduledTimes.map(function (item) {
+                return (
+                  '<div class="schedule-row">' +
+                    '<div style="display:flex;align-items:center;gap:16px;">' +
+                      '<span class="font-mono-tabular' + (item.enabled ? '' : ' line-through') + '" style="font-size:1rem;font-weight:500;color:' + (item.enabled ? 'var(--ink-primary)' : 'var(--ink-faint)') + ';">' + escapeHtml(item.time) + '</span>' +
+                      '<span style="color:var(--ink-secondary);">' + escapeHtml(item.label) + '</span>' +
+                    '</div>' +
+                    '<div style="display:flex;align-items:center;gap:10px;">' +
+                      '<button type="button" class="btn-outline btn-sm' + (item.enabled ? ' is-active' : '') + '" data-action="toggle-sched" data-id="' + escapeHtml(item.id) + '">' + (item.enabled ? '활성' : '비활성') + '</button>' +
+                      '<button type="button" class="danger-btn" data-action="remove-sched" data-id="' + escapeHtml(item.id) + '" aria-label="' + escapeHtml(item.time) + ' 삭제">' + iconSvg('trash', 15) + '</button>' +
+                    '</div>' +
+                  '</div>'
+                );
+              }).join('');
+
+          var logHtml = state.deliveryLog.length === 0
+            ? '<p style="padding:40px 0;text-align:center;font-size:0.875rem;color:var(--ink-muted);">아직 발췌 기록이 없습니다.</p>'
+            : state.deliveryLog.map(function (item) {
+                var typeLabel = item.triggerType === 'interval' ? '주기' : item.triggerType === 'scheduled' ? '정시' : '직접';
+                return (
+                  '<button type="button" class="log-item-btn" data-action="open-passage" data-id="' + escapeHtml(item.passageId) + '">' +
+                    '<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:0.75rem;color:var(--ink-muted);margin-bottom:4px;">' +
+                      '<span class="truncate">' + escapeHtml(item.author) + ' · 《' + escapeHtml(item.work) + '》</span>' +
+                      '<span class="font-mono-tabular" style="flex-shrink:0;">' + escapeHtml(formatTimeOfDay(item.triggeredAt)) + ' · ' + typeLabel + '</span>' +
+                    '</div>' +
+                    '<div class="font-editorial" style="font-size:0.92rem;color:var(--ink-primary);line-height:1.55;">“' + escapeHtml(item.text) + '”</div>' +
+                  '</button>'
+                );
+              }).join('');
+
+          var statusReadout = state.scheduleMode === 'interval'
+            ? formatDurationSeconds(state.secondsRemaining)
+            : nextInfo
+            ? '다음 ' + nextInfo.time + ' (' + formatDurationSeconds(nextInfo.secondsUntil) + ')'
+            : '예약된 시각 없음';
+
+          return (
+            '<section class="container page-section">' +
+              '<div class="page-header">' +
+                '<div>' +
+                  '<h1 class="page-title">시간 예약 및 알림</h1>' +
+                  '<p class="page-subtitle">원하는 간격마다 자동으로 문장을 넘기거나, 하루 중 특정 시각을 정해 새로운 문장을 받아볼 수 있습니다.</p>' +
+                '</div>' +
+              '</div>' +
+
+              '<div class="studio-grid">' +
+                '<div style="display:flex;flex-direction:column;gap:28px;">' +
+                  '<div class="panel-card">' +
+                    '<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--border-hairline);">' +
+                      '<div>' +
+                        '<h2 style="margin:0;font-size:1rem;font-weight:600;color:var(--ink-primary);">현재 발췌 방식</h2>' +
+                        '<p style="margin:4px 0 0;font-size:0.78rem;color:var(--ink-muted);">' +
+                          (state.scheduleMode === 'interval' ? formatIntervalLabel(state.intervalSeconds) + ' 자동으로 새 문장을 띄웁니다.' : '설정한 시각이 되면 자동으로 새 문장이 도착합니다.') +
+                        '</p>' +
+                      '</div>' +
+                      '<div class="segmented-inline">' +
+                        '<button type="button" class="seg-btn' + (state.scheduleMode === 'interval' ? ' is-active' : '') + '" data-action="set-sched-mode" data-mode="interval">주기 간격 모드</button>' +
+                        '<button type="button" class="seg-btn' + (state.scheduleMode === 'scheduled_times' ? ' is-active' : '') + '" data-action="set-sched-mode" data-mode="scheduled_times">지정 시각 모드</button>' +
+                      '</div>' +
+                    '</div>' +
+
+                    '<div style="padding-top:18px;">' +
+                      '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;">' +
+                        '<div>' +
+                          '<div style="font-size:0.75rem;color:var(--ink-muted);">주기 타이머 상태</div>' +
+                          '<div id="studio-countdown" class="font-mono-tabular" style="font-size:1.5rem;font-weight:500;color:var(--ink-primary);margin-top:2px;">' + escapeHtml(statusReadout) + '</div>' +
+                        '</div>' +
+                        (state.scheduleMode === 'interval'
+                          ? '<button type="button" class="' + (state.isTimerRunning ? 'btn-primary btn-sm' : 'btn-outline btn-sm') + '" data-action="toggle-timer">' +
+                              iconSvg(state.isTimerRunning ? 'pause' : 'play', 14) +
+                              '<span>' + (state.isTimerRunning ? '타이머 일시정지' : '타이머 시작') + '</span>' +
+                            '</button>'
+                          : '') +
+                      '</div>' +
+                      '<div class="preset-grid cols-6">' + presetBtns + '</div>' +
+                      '<form class="inline-form" style="margin-top:14px;" data-form="studio-custom-interval">' +
+                        '<span style="font-size:0.78rem;color:var(--ink-muted);">직접 설정:</span>' +
+                        '<input type="number" min="5" max="1440" class="field field-xs font-mono-tabular" style="width:76px;" value="' + escapeHtml(state.studioCustomVal) + '" data-bind="studioCustomVal" />' +
+                        '<select class="field field-xs" data-bind="studioCustomUnit">' +
+                          '<option value="sec"' + (state.studioCustomUnit === 'sec' ? ' selected' : '') + '>초마다</option>' +
+                          '<option value="min"' + (state.studioCustomUnit === 'min' ? ' selected' : '') + '>분마다</option>' +
+                        '</select>' +
+                        '<button type="submit" class="btn-outline btn-sm">적용</button>' +
+                      '</form>' +
+                    '</div>' +
+                  '</div>' +
+
+                  '<div class="panel-card plain">' +
+                    '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--border-hairline);">' +
+                      '<div>' +
+                        '<h2 style="margin:0;font-size:1rem;font-weight:600;color:var(--ink-primary);">매일 지정 시각 목록</h2>' +
+                        '<p style="margin:4px 0 0;font-size:0.78rem;color:var(--ink-muted);">지정 시각 모드에서 아래 시각에 도달하면 자동으로 새 문장이 발췌됩니다.</p>' +
+                      '</div>' +
+                      '<span style="color:var(--ink-faint);">' + iconSvg('clock', 16) + '</span>' +
+                    '</div>' +
+                    '<div>' + schedRows + '</div>' +
+                    '<form class="inline-form" style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border-hairline);" data-form="studio-add-time">' +
+                      '<input type="time" required class="field field-xs font-mono-tabular" value="' + escapeHtml(state.studioTimeInput) + '" data-bind="studioTimeInput" />' +
+                      '<input type="text" class="field field-xs" style="flex:1;min-width:140px;" value="' + escapeHtml(state.studioLabelInput) + '" placeholder="시각 메모 (예: 오전 독서)" data-bind="studioLabelInput" />' +
+                      '<button type="submit" class="btn-primary btn-sm">' + iconSvg('plus', 14) + '<span>시각 추가</span></button>' +
+                    '</form>' +
+                  '</div>' +
+
+                  '<div class="panel-card plain" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;">' +
+                    '<div>' +
+                      '<h3 style="margin:0;font-size:0.875rem;font-weight:600;color:var(--ink-primary);">문장 도착 알림 방식</h3>' +
+                      '<p style="margin:4px 0 0;font-size:0.78rem;color:var(--ink-muted);">새로운 문장이 전환될 때 부드러운 종소리나 브라우저 알림을 띄웁니다.</p>' +
+                    '</div>' +
+                    '<div class="action-group">' +
+                      '<button type="button" class="btn-outline btn-sm' + (state.soundEnabled ? ' is-active' : '') + '" data-action="toggle-sound">' +
+                        iconSvg(state.soundEnabled ? 'volume' : 'volume-x', 14) +
+                        '<span>' + (state.soundEnabled ? '알림음 켜짐' : '알림음 꺼짐') + '</span>' +
+                      '</button>' +
+                      '<button type="button" class="btn-outline btn-sm" data-action="preview-chime">소리 미리듣기</button>' +
+                      '<button type="button" class="btn-outline btn-sm' + (state.notificationsEnabled ? ' is-active' : '') + '" data-action="toggle-notif">' +
+                        iconSvg(state.notificationsEnabled ? 'bell' : 'bell-off', 14) +
+                        '<span>' + (state.notificationsEnabled ? '브라우저 알림 켜짐' : '브라우저 알림 꺼짐') + '</span>' +
+                      '</button>' +
+                    '</div>' +
+                  '</div>' +
+                '</div>' +
+
+                '<div class="panel-card plain">' +
+                  '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--border-hairline);">' +
+                    '<div>' +
+                      '<h2 style="margin:0;font-size:1rem;font-weight:600;color:var(--ink-primary);">최근 발췌 기록</h2>' +
+                      '<p style="margin:4px 0 0;font-size:0.78rem;color:var(--ink-muted);">화면에 머물렀던 최근 문장들입니다</p>' +
+                    '</div>' +
+                    (state.deliveryLog.length > 0 ? '<button type="button" class="danger-btn" style="font-size:0.75rem;" data-action="clear-log">기록 비우기</button>' : '') +
+                  '</div>' +
+                  '<div style="max-height:520px;overflow-y:auto;">' + logHtml + '</div>' +
+                '</div>' +
+              '</div>' +
+            '</section>'
+          );
+        }
+
+        function renderArchiveView() {
+          var allPassages = getAllPassages();
+          var savedList = state.savedIds
+            .map(function (id) { return allPassages.find(function (p) { return p.id === id; }); })
+            .filter(Boolean);
+
+          var visible = savedList.filter(function (p) {
+            return state.archiveScope === 'all' || p.category === state.archiveScope;
+          });
+
+          var bodyHtml = visible.length === 0
+            ? '<div style="padding:72px 0;text-align:center;border-bottom:1px solid var(--border-hairline);">' +
+                '<p class="font-editorial" style="margin:0;font-size:1.35rem;color:var(--ink-primary);">아직 보관된 문장이 없습니다.</p>' +
+                '<p style="margin:8px 0 0;font-size:0.875rem;color:var(--ink-muted);">‘오늘의 발췌’ 화면에서 마음에 닿는 문장을 만나면 보관하기를 눌러보세요.</p>' +
+                '<button type="button" class="btn-primary" style="margin-top:22px;" data-action="nav" data-view="desk">오늘의 발췌로 이동</button>' +
+              '</div>'
+            : visible.map(function (p) {
+                var isCopied = state.copiedArchiveId === p.id;
+                return (
+                  '<article class="archive-row">' +
+                    '<div style="max-width:740px;">' +
+                      '<div style="font-size:0.75rem;color:var(--ink-muted);margin-bottom:8px;">' +
+                        (p.category === 'philosopher' ? '철학자' : '소설가') + ' · ' + escapeHtml(p.author) + ' · 《' + escapeHtml(p.work) + '》' +
+                      '</div>' +
+                      '<blockquote class="font-editorial" style="margin:0;font-size:1.35rem;line-height:1.65;color:var(--ink-primary);">“' + escapeHtml(p.text) + '”</blockquote>' +
+                      (p.context ? '<p style="margin:10px 0 0;font-size:0.84rem;color:var(--ink-muted);line-height:1.6;">' + escapeHtml(p.context) + '</p>' : '') +
+                    '</div>' +
+                    '<div class="action-group">' +
+                      '<button type="button" class="btn-outline btn-sm" data-action="open-passage" data-id="' + escapeHtml(p.id) + '">' + iconSvg('book', 14) + '<span>펼쳐 읽기</span></button>' +
+                      '<button type="button" class="btn-outline btn-sm" data-action="copy-archive" data-id="' + escapeHtml(p.id) + '">' +
+                        iconSvg(isCopied ? 'check' : 'copy', 14) +
+                        '<span style="' + (isCopied ? 'color:var(--accent-primary);' : '') + '">' + (isCopied ? '복사됨' : '복사') + '</span>' +
+                      '</button>' +
+                      '<button type="button" class="danger-btn" data-action="remove-saved" data-id="' + escapeHtml(p.id) + '" aria-label="보관함에서 제거">' + iconSvg('trash', 15) + '</button>' +
+                    '</div>' +
+                  '</article>'
+                );
+              }).join('');
+
+          return (
+            '<section class="container page-section">' +
+              '<div class="page-header">' +
+                '<div>' +
+                  '<h1 class="page-title">문장 보관함</h1>' +
+                  '<p class="page-subtitle">마음에 오래 남은 철학자와 소설가의 문장들을 모아두는 개인 서가입니다.</p>' +
+                '</div>' +
+                '<div class="segmented-inline">' +
+                  '<button type="button" class="seg-btn' + (state.archiveScope === 'all' ? ' is-active' : '') + '" data-action="set-archive-scope" data-scope="all">전체 (' + savedList.length + ')</button>' +
+                  '<button type="button" class="seg-btn' + (state.archiveScope === 'philosopher' ? ' is-active' : '') + '" data-action="set-archive-scope" data-scope="philosopher">철학자</button>' +
+                  '<button type="button" class="seg-btn' + (state.archiveScope === 'novelist' ? ' is-active' : '') + '" data-action="set-archive-scope" data-scope="novelist">소설가</button>' +
+                '</div>' +
+              '</div>' +
+              '<div>' + bodyHtml + '</div>' +
+            '</section>'
+          );
+        }
+
+        function renderFooter() {
+          var authorsCount = getAllAuthors().length;
+          var passagesCount = getAllPassages().length;
+          return (
+            '<footer class="site-footer">' +
+              '<div class="container footer-inner">' +
+                '<span>사유의 서가 · 철학자와 소설가의 문장 발췌</span>' +
+                '<div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;">' +
+                  '<span class="font-mono-tabular">수록 ' + authorsCount + '인 · ' + passagesCount + '문장</span>' +
+                  '<span aria-hidden="true" style="color:var(--border-hairline);">|</span>' +
+                  '<button type="button" class="text-link-btn" style="color:var(--accent-primary);font-weight:500;" data-action="download-html">' +
+                    iconSvg('download', 13) +
+                    '<span>index.html 다운로드</span>' +
+                  '</button>' +
+                  '<button type="button" class="text-link-btn" data-action="copy-html">' +
+                    iconSvg(state.copiedSource ? 'check' : 'copy', 13) +
+                    '<span>' + (state.copiedSource ? '소스 복사됨' : 'HTML 코드 복사') + '</span>' +
+                  '</button>' +
+                '</div>' +
+              '</div>' +
+            '</footer>'
+          );
+        }
+
+        var lastRenderedPassageId = null;
+
+        function render() {
+          var appEl = document.getElementById('app');
+          if (!appEl) return;
+
+          // Preserve active search input focus/cursor across renders
+          var activeEl = document.activeElement;
+          var activeId = activeEl && activeEl.id ? activeEl.id : null;
+          var selStart = activeEl && typeof activeEl.selectionStart === 'number' ? activeEl.selectionStart : null;
+
+          var currentPassage = getCurrentPassage();
+          var animatePassage = lastRenderedPassageId !== currentPassage.id;
+          lastRenderedPassageId = currentPassage.id;
+
+          var mainHtml = '';
+          if (state.activeView === 'desk') mainHtml = renderDeskView(animatePassage);
+          else if (state.activeView === 'authors') mainHtml = renderAuthorsView();
+          else if (state.activeView === 'schedule') mainHtml = renderScheduleView();
+          else if (state.activeView === 'archive') mainHtml = renderArchiveView();
+
+          appEl.innerHTML = renderHeader() + '<main>' + mainHtml + '</main>' + renderFooter();
+
+          if (activeId) {
+            var restored = document.getElementById(activeId);
+            if (restored) {
+              restored.focus();
+              if (selStart !== null && typeof restored.setSelectionRange === 'function') {
+                try {
+                  restored.setSelectionRange(selStart, selStart);
+                } catch (e) {
+                  // ignore
+                }
+              }
+            }
+          }
+        }
+
+        // Fast DOM-only countdown update every second (avoids full re-render flicker)
+        function updateCountdownsOnly() {
+          if (state.activeView === 'desk') {
+            if (state.scheduleMode === 'interval') {
+              var el = document.getElementById('desk-countdown');
+              var bar = document.getElementById('desk-progress');
+              if (el) el.textContent = formatDurationSeconds(state.secondsRemaining);
+              if (bar && state.intervalSeconds > 0) {
+                var pct = Math.min(100, Math.max(0, ((state.intervalSeconds - state.secondsRemaining) / state.intervalSeconds) * 100));
+                bar.style.width = pct + '%';
+              }
+            } else {
+              var schedEl = document.getElementById('desk-sched-countdown');
+              var nextInfo = getNextScheduledInfo();
+              if (schedEl) {
+                schedEl.textContent = nextInfo ? formatDurationSeconds(nextInfo.secondsUntil) : '--:--:--';
+              }
+            }
+          } else if (state.activeView === 'schedule') {
+            var studioEl = document.getElementById('studio-countdown');
+            if (studioEl) {
+              if (state.scheduleMode === 'interval') {
+                studioEl.textContent = formatDurationSeconds(state.secondsRemaining);
+              } else {
+                var next = getNextScheduledInfo();
+                studioEl.textContent = next
+                  ? '다음 ' + next.time + ' (' + formatDurationSeconds(next.secondsUntil) + ')'
+                  : '예약된 시각 없음';
+              }
+            }
+          }
+        }
+
+        // =========================================================================
+        // 8. Event Delegation (Clicks, Inputs, Forms)
+        // =========================================================================
+        var appRoot = document.getElementById('app');
+
+        appRoot.addEventListener('click', function (e) {
+          var target = e.target.closest('[data-action]');
+          if (!target) return;
+          var action = target.getAttribute('data-action');
+          var id = target.getAttribute('data-id');
+
+          switch (action) {
+            case 'nav':
+              state.activeView = target.getAttribute('data-view') || 'desk';
+              render();
+              break;
+            case 'top-draw':
+              drawNextPassage('manual');
+              if (state.activeView !== 'desk') {
+                state.activeView = 'desk';
+                render();
+              }
+              break;
+            case 'next-passage':
+              drawNextPassage('manual');
+              break;
+            case 'prev-passage':
+              if (state.historyIndex > 0) {
+                state.historyIndex -= 1;
+                state.copiedDesk = false;
+                render();
+              }
+              break;
+            case 'copy-desk': {
+              var cur = getCurrentPassage();
+              var txt = '"' + cur.text + '" — ' + cur.author + ', 《' + cur.work + '》';
+              copyTextSafe(txt, function () {
+                state.copiedDesk = true;
+                render();
+                setTimeout(function () {
+                  state.copiedDesk = false;
+                  render();
+                }, 1700);
+              });
+              break;
+            }
+            case 'toggle-save':
+              if (id) toggleSave(id);
+              break;
+            case 'toggle-context':
+              state.showContext = !state.showContext;
+              render();
+              break;
+            case 'toggle-dark':
+              state.isDark = !state.isDark;
+              applyTheme();
+              safeWriteJson(STORAGE_KEYS.DARK_MODE, state.isDark);
+              render();
+              break;
+            case 'dismiss-notice':
+              state.arrivalNotice = null;
+              render();
+              break;
+            case 'reset-scope':
+              state.filterScope = 'all';
+              selectAuthor(null);
+              break;
+            case 'set-sched-mode':
+              state.scheduleMode = target.getAttribute('data-mode') || 'interval';
+              safeWriteJson(STORAGE_KEYS.SCHEDULE_MODE, state.scheduleMode);
+              render();
+              break;
+            case 'toggle-timer':
+              state.isTimerRunning = !state.isTimerRunning;
+              render();
+              break;
+            case 'set-interval': {
+              var sec = parseInt(target.getAttribute('data-sec'), 10);
+              if (!isNaN(sec)) setIntervalSeconds(sec);
+              break;
+            }
+            case 'studio-set-interval': {
+              var sSec = parseInt(target.getAttribute('data-sec'), 10);
+              if (!isNaN(sSec)) {
+                state.scheduleMode = 'interval';
+                safeWriteJson(STORAGE_KEYS.SCHEDULE_MODE, 'interval');
+                setIntervalSeconds(sSec);
+              }
+              break;
+            }
+            case 'toggle-sched':
+              if (id) toggleScheduledTime(id);
+              break;
+            case 'remove-sched':
+              if (id) removeScheduledTime(id);
+              break;
+            case 'toggle-sound':
+              state.soundEnabled = !state.soundEnabled;
+              safeWriteJson(STORAGE_KEYS.SOUND_ENABLED, state.soundEnabled);
+              render();
+              break;
+            case 'preview-chime':
+              playGentleChime();
+              break;
+            case 'toggle-notif':
+              toggleNotifications();
+              break;
+            case 'set-scope':
+              changeFilterScope(target.getAttribute('data-scope') || 'all');
+              break;
+            case 'select-author': {
+              var nextAuthor = id || null;
+              selectAuthor(nextAuthor === state.selectedAuthorId ? null : nextAuthor);
+              break;
+            }
+            case 'toggle-add-form':
+              state.dirShowAddForm = !state.dirShowAddForm;
+              render();
+              break;
+            case 'set-dir-scope':
+              state.dirScope = target.getAttribute('data-scope') || 'all';
+              render();
+              break;
+            case 'inspect-author':
+              state.dirExpandedAuthorId = id;
+              render();
+              break;
+            case 'lock-author-read':
+              if (id) {
+                state.activeView = 'desk';
+                selectAuthor(id);
+              }
+              break;
+            case 'open-passage':
+              if (id) openSpecificPassage(id);
+              break;
+            case 'delete-custom':
+              if (id) {
+                state.customPassages = state.customPassages.filter(function (p) { return p.id !== id; });
+                state.savedIds = state.savedIds.filter(function (sid) { return sid !== id; });
+                safeWriteJson(STORAGE_KEYS.CUSTOM_PASSAGES, state.customPassages);
+                safeWriteJson(STORAGE_KEYS.SAVED_IDS, state.savedIds);
+                render();
+              }
+              break;
+            case 'clear-log':
+              state.deliveryLog = [];
+              safeWriteJson(STORAGE_KEYS.DELIVERY_LOG, []);
+              render();
+              break;
+            case 'set-archive-scope':
+              state.archiveScope = target.getAttribute('data-scope') || 'all';
+              render();
+              break;
+            case 'copy-archive': {
+              var found = getAllPassages().find(function (p) { return p.id === id; });
+              if (found) {
+                var formatted = '"' + found.text + '" — ' + found.author + ', 《' + found.work + '》';
+                copyTextSafe(formatted, function () {
+                  state.copiedArchiveId = found.id;
+                  render();
+                  setTimeout(function () {
+                    state.copiedArchiveId = null;
+                    render();
+                  }, 1600);
+                });
+              }
+              break;
+            }
+            case 'remove-saved':
+              if (id) {
+                state.savedIds = state.savedIds.filter(function (item) { return item !== id; });
+                safeWriteJson(STORAGE_KEYS.SAVED_IDS, state.savedIds);
+                render();
+              }
+              break;
+            case 'download-html':
+              downloadStandaloneHtml();
+              break;
+            case 'copy-html':
+              copyStandaloneHtml();
+              break;
+          }
+        });
+
+        appRoot.addEventListener('input', function (e) {
+          var el = e.target;
+          var bind = el.getAttribute('data-bind');
+          if (!bind) return;
+          state[bind] = el.value;
+          if (bind === 'deskAuthorQuery' || bind === 'dirQuery') {
+            render();
+          }
+        });
+
+        appRoot.addEventListener('change', function (e) {
+          var el = e.target;
+          var bind = el.getAttribute('data-bind');
+          if (!bind) return;
+          state[bind] = el.value;
+        });
+
+        appRoot.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var form = e.target;
+          var formType = form.getAttribute('data-form');
+
+          if (formType === 'desk-custom-interval') {
+            var num = parseInt(state.deskCustomValue, 10);
+            if (!isNaN(num) && num > 0) {
+              var total = state.deskCustomUnit === 'min' ? num * 60 : num;
+              setIntervalSeconds(total);
+            }
+          } else if (formType === 'studio-custom-interval') {
+            var sNum = parseInt(state.studioCustomVal, 10);
+            if (!isNaN(sNum) && sNum > 0) {
+              var sTotal = state.studioCustomUnit === 'min' ? sNum * 60 : sNum;
+              state.scheduleMode = 'interval';
+              safeWriteJson(STORAGE_KEYS.SCHEDULE_MODE, 'interval');
+              setIntervalSeconds(sTotal);
+            }
+          } else if (formType === 'desk-add-time') {
+            addScheduledTime(state.deskNewTime, '맞춤 시각');
+          } else if (formType === 'studio-add-time') {
+            addScheduledTime(state.studioTimeInput, state.studioLabelInput.trim() || '정시 발췌');
+            state.studioLabelInput = '';
+            render();
+          } else if (formType === 'add-custom-passage') {
+            var fd = new FormData(form);
+            var author = String(fd.get('author') || '').trim();
+            var authorOriginal = String(fd.get('authorOriginal') || '').trim();
+            var work = String(fd.get('work') || '').trim();
+            var category = String(fd.get('category') || 'philosopher');
+            var workType = String(fd.get('workType') || '저서 발췌');
+            var text = String(fd.get('text') || '').trim();
+            var context = String(fd.get('context') || '').trim();
+            if (!author || !work || !text) return;
+
+            var existingAuthor = getAllAuthors().find(function (a) {
+              return a.name.toLowerCase() === author.toLowerCase();
+            });
+            var authorId = existingAuthor
+              ? existingAuthor.id
+              : 'custom-' + author.toLowerCase().replace(/\s+/g, '-') + '-' + Date.now();
+
+            var newPassage = {
+              id: 'custom-p-' + Date.now(),
+              text: text,
+              authorId: authorId,
+              author: author,
+              authorOriginal: authorOriginal,
+              era: existingAuthor ? existingAuthor.era : '사용자 서가',
+              category: category === 'novelist' ? 'novelist' : 'philosopher',
+              work: work,
+              workType: workType,
+              context: context,
+              isCustom: true
+            };
+
+            state.customPassages = [newPassage].concat(state.customPassages);
+            safeWriteJson(STORAGE_KEYS.CUSTOM_PASSAGES, state.customPassages);
+            state.dirShowAddForm = false;
+            openSpecificPassage(newPassage.id);
+          }
+        });
+
+        // =========================================================================
+        // 9. Master 1-Second Clock
+        // =========================================================================
+        window.setInterval(function () {
+          var now = new Date();
+
+          if (state.scheduleMode === 'interval' && state.isTimerRunning) {
+            if (state.secondsRemaining <= 1) {
+              drawNextPassage('interval', null, '설정한 주기가 되어 새 문장이 도착했습니다.');
+              return;
+            } else {
+              state.secondsRemaining -= 1;
+              updateCountdownsOnly();
+            }
+          }
+
+          if (state.scheduleMode === 'scheduled_times') {
+            var hh = String(now.getHours()).padStart(2, '0');
+            var mm = String(now.getMinutes()).padStart(2, '0');
+            var currentHHMM = hh + ':' + mm;
+            var dateKey = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' ' + currentHHMM;
+
+            if (lastTriggeredMinute !== dateKey) {
+              var matched = state.scheduledTimes.find(function (entry) {
+                return entry.enabled && entry.time === currentHHMM;
+              });
+              if (matched) {
+                lastTriggeredMinute = dateKey;
+                drawNextPassage(
+                  'scheduled',
+                  null,
+                  '예약된 시각(' + matched.time + ' · ' + matched.label + ')의 새 문장이 도착했습니다.'
+                );
+                return;
+              }
+            }
+            updateCountdownsOnly();
+          }
+        }, 1000);
+
+        // Initial render
+        render();
+      })();
+    </script>
+  
+
+</body><whale-quicksearch translate="no" style="visibility: visible;"></whale-quicksearch></html>
